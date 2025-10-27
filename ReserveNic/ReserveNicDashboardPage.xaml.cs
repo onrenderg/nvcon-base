@@ -259,7 +259,7 @@ namespace NICVC
             var current = Connectivity.NetworkAccess;
             if (current == NetworkAccess.Internet)
             {
-                await GetCICVc(selecteddate);
+                int responsecode = await GetCICVc(selecteddate);
                 if (responsecode == 200)
                 {
                     await Navigation.PushAsync(new CicVcPage(selecteddate));
@@ -715,9 +715,9 @@ namespace NICVC
             }
         }
 
-        async Task GetCICVc(string selecteddate)
+        async Task<int> GetCICVc(string selecteddate)
         {
-
+            int responsecode = 400;
             Loading_activity.IsVisible = true;
             Lbl_PleaseWait.Text = App.GetLabelByKey("pleasewait");
 
@@ -839,13 +839,14 @@ namespace NICVC
                     }                   
                 }
                 Loading_activity.IsVisible = false;
+                return responsecode;
             }
             catch (Exception ey)
             {
                 responsecode = 400;
                 Loading_activity.IsVisible = false;
                 await DisplayAlert("Exception", ey.Message, "OK");
-                return;
+                return responsecode;
             }
         }
     }
