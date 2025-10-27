@@ -24,7 +24,7 @@
                Grid.Row="0"
                Padding="3" 
                FontSize="18" 
-               HorizontalTextAlignment="Center" 
+               HorizontalTextAlignment="Center"     
                VerticalTextAlignment="Center" 
                Margin="2,2,2,0" 
                FontAttributes="Bold" 

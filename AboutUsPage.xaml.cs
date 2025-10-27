@@ -23,7 +23,8 @@ namespace NICVC
             lbl_preferences.Text = App.GetLabelByKey("Preferences");
             lbl_Logout.Text = App.GetLabelByKey("logout");
             lbl_personlainfo.Text = App.GetLabelByKey("updatepersonalinfo");
-            lbl_deleteprofile.Text = "Delete Profile";            
+            lbl_deleteprofile.Text = "Delete Profile";
+            lbl_privacypolicy.Text = (App.Language == 0) ? "Privacy Policy" : "गोपनीयता नीति";
             lbl_deptheading.Text = App.GetLabelByKey("vcdivison");
 
             lbl_depttCall.Text = App.GetLabelByKey("niccontactinfo") + " - 1800111555";
@@ -136,6 +137,11 @@ namespace NICVC
         private void PersonalInfo_tapped(object sender, EventArgs e)
         {
             Navigation.PushAsync(new PersonalinforPage());
+        }
+
+        private void PrivacyPolicy_tapped(object sender, EventArgs e)
+        {
+            Launcher.OpenAsync(new Uri("https://mobileappshp.nic.in/assets/pdf/mobile-app-privacy-policy/nicvc.html"));
         }
 
         private async void DeleteProfile_tapped(object sender, EventArgs e)
