@@ -76,28 +76,34 @@
                         SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid HorizontalOptions="Fill" 
-                          Margin="5" 
-                          Padding="5"
-                          ColumnDefinitions="3*,3*,4*">
-                        <Label Text="{Binding MonthName}" 
-                               TextColor="Maroon" 
-                               FontSize="16" 
-                               Grid.Column="0" 
-                               FontAttributes="Bold"/>
-                        <Label Text="{Binding TotalVc}" 
-                     
-                               HorizontalTextAlignment="Center" 
-                               FontSize="16" 
-                               Grid.Column="1" 
-                               FontAttributes="Bold"/>
-                        <Label Text="{Binding TotalHours}" 
-                   
-                               HorizontalTextAlignment="Center" 
-                               FontSize="16" 
-                               Grid.Column="2" 
-                               FontAttributes="Bold"/>
-                    </Grid>
+                    <VerticalStackLayout>
+                        <Grid HorizontalOptions="Fill" 
+                              Margin="5,5,5,0" 
+                              Padding="5"
+                              ColumnDefinitions="3*,3*,4*">
+                            <Label Text="{Binding MonthName}" 
+                                   TextColor="Maroon" 
+                                   FontSize="16" 
+                                   Grid.Column="0" 
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding TotalVc}" 
+                         
+                                   HorizontalTextAlignment="Center" 
+                                   FontSize="16" 
+                                   Grid.Column="1" 
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding TotalHours}" 
+                       
+                                   HorizontalTextAlignment="Center" 
+                                   FontSize="16" 
+                                   Grid.Column="2" 
+                                   FontAttributes="Bold"/>
+                        </Grid>
+                        <BoxView HeightRequest="1" 
+                                 BackgroundColor="LightGray" 
+                                 HorizontalOptions="Fill" 
+                                 Margin="5,5,5,0"/>
+                    </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
