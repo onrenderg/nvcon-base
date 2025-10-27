@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.AboutUsPage"
+             x:Name="title_aboutpage"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+             ios:Page.UseSafeArea="true" 
+             BackgroundColor="White" 
+             Title="More" 
+             IconImageSource="ic_more" 
+             BackgroundImageSource="back1.jpg">
+
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+            <Label x:Name="Lbl_Header" 
+                   Text="NIC Video Conferencing" 
+                   Style="{StaticResource NavigationLabelColor}" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Margin="0" Spacing="10">
+
+                <Image Source="ic_launcher" 
+                       HorizontalOptions="Center" 
+                       WidthRequest="130" 
+                       HeightRequest="100" 
+                       Margin="0,3,0,0"/>
+                
+                <Label x:Name="lbl_appname" 
+                       Text="NICVC" 
+                       FontSize="Large" 
+                       TextColor="Navy" 
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center" 
+                       FontAttributes="Bold"/>
+                
+                <Label x:Name="Lbl_HP" 
+                       TextColor="Black" 
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center" 
+                       IsVisible="false"/>
+                
+                <Label x:Name="lbl_deptheading" 
+                       Text="VC Divison, New Delhi" 
+                       TextDecorations="Underline" 
+                       FontSize="18" 
+                       TextColor="Navy" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center" 
+                       HorizontalTextAlignment="Center"/>
+
+                <HorizontalStackLayout Margin="5,0,0,0" Spacing="10">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Deptt_Call" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_phone" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_depttCall" 
+                           Text="Call Us" 
+                           TextColor="Black" 
+                           FontSize="16" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="5,0,0,0" Spacing="10">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="deptt_WebSite" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_website" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_depttWebSite" 
+                           Text="Website" 
+                           TextColor="Black" 
+                           FontSize="16" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="5,0,0,0" Spacing="10">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Deptt_email" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_email" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_depttemail" 
+                           Text="Email" 
+                           TextColor="Black" 
+                           FontSize="16" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="5,0,0,0" Spacing="10">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Preferences" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_setting" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_preferences" 
+                           Text="Preferences" 
+                           TextColor="Black" 
+                           FontSize="16" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout x:Name="stack_personlainfo" Margin="5,0,0,0" Spacing="10">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="PersonalInfo_tapped" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_profile" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_personlainfo" 
+                           Text="Update personal Info." 
+                           TextColor="Black" 
+                           FontSize="16" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout x:Name="stack_deleteprofile" Margin="5,0,0,0" Spacing="10" IsVisible="False">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="DeleteProfile_tapped" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_delete" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_deleteprofile" 
+                           Text="Delete Profile" 
+                           TextColor="Red" 
+                           FontSize="16" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Margin="5,0,0,0" Spacing="10">
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Logout" NumberOfTapsRequired="1" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                    <Image Source="ic_logout" HeightRequest="30" VerticalOptions="Center"/>
+                    <Label x:Name="lbl_Logout" 
+                           Text="Logout" 
+                           TextColor="Black" 
+                           VerticalTextAlignment="Center" 
+                           FontSize="16"/>
+                </HorizontalStackLayout>
+                
+                <Image x:Name="img_niclogo" 
+                       Source="ic_niclogo" 
+                       HorizontalOptions="Center" 
+                       WidthRequest="150" 
+                       HeightRequest="100"/>
+            </VerticalStackLayout>
+        </ScrollView>
+        <!-- Logout Help Overlay -->
+        <Border x:Name="Stack_Carousel" 
+                BackgroundColor="#C0808080" 
+                Padding="10" 
+                IsVisible="false">
+            <Border Stroke="Gold" 
+                    StrokeThickness="2" 
+                    BackgroundColor="White" 
+                    HorizontalOptions="Fill" 
+                    VerticalOptions="Fill">
+                <VerticalStackLayout Spacing="5">
+                    <BoxView HeightRequest="2" BackgroundColor="Gold"/>
+                    <Label Text="How to Logout" 
+                           HorizontalOptions="Center" 
+                           FontAttributes="Bold" 
+                           FontSize="16"/>
+                    <BoxView HeightRequest="2" BackgroundColor="Gold"/>
+                    
+                    <Grid BackgroundColor="{Binding BackgroundColor}" RowDefinitions="*,Auto">
+                        <Image Source="l3.png" 
+                               VerticalOptions="Fill" 
+                               HorizontalOptions="Fill" 
+                               Margin="2" 
+                               Grid.Row="0"/>
+                        <Label TextColor="Red" 
+                               HorizontalTextAlignment="Center" 
+                               Text="Click On Menu Icon (1) and choose Logout (2) option." 
+                               VerticalTextAlignment="Center" 
+                               FontAttributes="Bold" 
+                               Grid.Row="1"/>
+                    </Grid>
+                    
+                    <Button Text="Continue to Logout" 
+                            x:Name="Btn_CloseThisHelp" 
+                            Clicked="Btn_CloseThisHelp_Clicked" 
+                            BackgroundColor="Navy" 
+                            TextColor="White"/>
+                </VerticalStackLayout>
+            </Border>
+        </Border>
+
+    </Grid>
+</ContentPage>

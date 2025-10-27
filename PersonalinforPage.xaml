@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.PersonalinforPage" BackgroundImageSource="back1.jpg"
+              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+              ios:Page.UseSafeArea="true" >
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+            <Label x:Name="Lbl_Header1" 
+                   Text="NIC Video Conferencing" 
+                   Style="{StaticResource NavigationLabelColor}" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
+    <Grid RowDefinitions="Auto,Auto,*,Auto">
+        <Label Grid.Row="0" 
+               x:Name="lbl_user_header1" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               Margin="2,2,2,0" 
+               FontAttributes="Bold" 
+               TextColor="Navy"/>
+
+        <Frame Grid.Row="1" 
+               CornerRadius="20" 
+               BorderColor="Navy" 
+               HorizontalOptions="Fill" 
+               Margin="5" 
+               BackgroundColor="AliceBlue" 
+               Padding="10">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Label x:Name="Lbl_Header" 
+                       Text="Feedback" 
+                       BackgroundColor="Transparent" 
+                       TextColor="Navy" 
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       VerticalTextAlignment="Center"/>
+                <Image Source="ic_profile.png" Aspect="AspectFit" HeightRequest="30" WidthRequest="30"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <ScrollView Grid.Row="2">
+            <Grid Margin="10" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label x:Name="lbl_mobile" Grid.Row="0" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="entry_mobile" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Keyboard="Numeric" MaxLength="10"/>
+
+                <Label x:Name="lbl_Name" Grid.Row="1" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="entry_name" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Keyboard="Text"/>
+
+                <Label x:Name="lbl_department" Grid.Row="2" Grid.Column="0" Text="Select VC" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="entry_department" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Keyboard="Text"/>
+
+                <Label x:Name="lbl_designation" Grid.Row="3" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="entry_designation" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" Keyboard="Text"/>
+
+                <Label x:Name="lbl_email" Grid.Row="4" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
+                <Entry x:Name="entry_email" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" Keyboard="Email"/>
+            </Grid>
+        </ScrollView>
+
+        <HorizontalStackLayout Grid.Row="3" HorizontalOptions="Center" Spacing="10" Margin="5">
+            <Button x:Name="btn_cancel" Text="Cancel" BackgroundColor="White" TextColor="Navy" FontSize="18" FontAttributes="Bold" BorderColor="Navy" BorderWidth="1" CornerRadius="10" Clicked="btn_cancel_Clicked" Padding="30,10"/>
+            <Button IsVisible="false" x:Name="btn_save" Text="Save" BackgroundColor="White" TextColor="Navy" FontSize="18" FontAttributes="Bold" BorderColor="Navy" BorderWidth="1" CornerRadius="10" Clicked="btn_save_Clicked" Padding="30,10"/>
+            <Button IsVisible="false" x:Name="btn_update" Text="Update" BackgroundColor="White" TextColor="Navy" FontSize="18" FontAttributes="Bold" BorderColor="Navy" BorderWidth="1" CornerRadius="10" Clicked="btn_update_Clicked" Padding="30,10"/>
+        </HorizontalStackLayout>
+
+        <!-- Loading Overlay -->
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="4"
+              x:Name="Loading_activity" 
+              BackgroundColor="#C0808080" 
+              IsVisible="false"
+              Padding="20">
+            <Frame BackgroundColor="White" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   Padding="20" 
+                   CornerRadius="10">
+                <HorizontalStackLayout Spacing="15">
+                    <ActivityIndicator IsVisible="true" IsRunning="true"/>
+                    <Label x:Name="Lbl_PleaseWait" 
+                           Text="Please Wait ..." 
+                           TextColor="Black" 
+                           FontAttributes="Bold" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+        </Grid>
+    </Grid>
+
+</ContentPage>

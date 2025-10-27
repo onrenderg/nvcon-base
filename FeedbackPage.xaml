@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.FeedbackPage" 
+             x:Name="title_feedbackpage"
+             BackgroundImageSource="back1.jpg"
+              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+              ios:Page.UseSafeArea="true" Title="Feedback" IconImageSource="ic_feedback1" >
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+            <Label x:Name="Lbl_Header1" 
+                   Text="NIC Video Conferencing" 
+                   Style="{StaticResource NavigationLabelColor}" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
+    <Grid RowDefinitions="Auto,Auto,Auto,*,Auto">
+        <Frame Grid.Row="0" CornerRadius="20" BorderColor="Navy" HorizontalOptions="Fill" Margin="5" BackgroundColor="AliceBlue" Padding="10">               
+            <Label x:Name="Lbl_UserDetails" 
+                   BackgroundColor="Transparent" 
+                   TextColor="Navy" 
+                   FontSize="16" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"/>
+        </Frame>
+
+        <Label Grid.Row="1" 
+               x:Name="lbl_user_header1" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               Margin="2,2,2,0" 
+               FontAttributes="Bold" 
+               TextColor="Navy"/>
+
+        <Frame Grid.Row="2" CornerRadius="20" BorderColor="Navy" HorizontalOptions="Fill" Margin="5" BackgroundColor="AliceBlue" Padding="10">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">              
+                <Label x:Name="Lbl_Header" 
+                       Text="Feedback" 
+                       BackgroundColor="Transparent" 
+                       TextColor="Navy" 
+                       FontSize="20" 
+                       FontAttributes="Bold" 
+                       VerticalTextAlignment="Center"/>
+                <Image Source="ic_feedback.png" Aspect="AspectFit" HeightRequest="30" WidthRequest="30"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <ScrollView Grid.Row="3">
+            <VerticalStackLayout Spacing="10">
+                <Grid Margin="10" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="lbl_selvc" Grid.Row="0" Text="Select VC" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Picker x:Name="picker_vc" 
+                            Grid.Row="1" Title="Select VC"  
+                            FontSize="16" FontAttributes="Bold" 
+             
+                  
+                            SelectedIndexChanged="picker_vc_SelectedIndexChanged" 
+                            ios:Picker.UpdateMode="WhenFinished" 
+                            HorizontalOptions="Fill"/>
+
+                    <Label x:Name="lbl_selstudio" Grid.Row="2" Text="Select Studio" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Picker x:Name="picker_studio" 
+                            Grid.Row="3" Title="Select Studio" 
+                            FontSize="16" FontAttributes="Bold" 
+              
+      
+                            VerticalOptions="Center" 
+                            ios:Picker.UpdateMode="WhenFinished" 
+                            HorizontalOptions="Fill"/>                              
+                </Grid>
+
+                <Label Margin="10,0" x:Name="lbl_taprating" Text="Tap To Select Rating(1-5 Star) #" FontSize="16" FontAttributes="Bold" TextColor="Black"/>
+                <Grid Margin="10" ColumnSpacing="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Grid.Column="0" Source="Starunselected" x:Name="rateone" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="One" NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="1" Source="Starunselected" x:Name="ratetwo" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Two" NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="2" Source="Starunselected" x:Name="ratethree" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Three" NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="3" Source="Starunselected" x:Name="ratefour" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Four" NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image Grid.Column="4" Source="Starunselected" x:Name="ratefive" HeightRequest="40">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Five" NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+
+                <VerticalStackLayout Margin="10" Spacing="5">
+                    <Label x:Name="lbl_remarks" Text="Enter Remarks" FontSize="16" FontAttributes="Bold" />
+                    <Editor x:Name="editor_remarks" AutoSize="TextChanges" FontSize="16" MaxLength="200" Placeholder="Enter your remarks here"/>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Button Grid.Row="4" x:Name="btn_save" Text="Submit" BackgroundColor="White" TextColor="Navy" FontSize="18" FontAttributes="Bold" BorderColor="Navy" BorderWidth="1" CornerRadius="10" Margin="10" Clicked="btn_save_Clicked" Padding="15,10"/>
+
+        <!-- Loading Overlay -->
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="5"
+              x:Name="Loading_activity" 
+              BackgroundColor="#C0808080" 
+              IsVisible="false"
+              Padding="20">
+            <Frame BackgroundColor="White" 
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" 
+                   Padding="20" 
+                   CornerRadius="10">
+                <HorizontalStackLayout Spacing="15">
+                    <ActivityIndicator IsVisible="true" IsRunning="true" Color="Navy"/>
+                    <Label x:Name="Lbl_PleaseWait" 
+                           Text="Please Wait ..." 
+                           TextColor="Black" 
+                           FontAttributes="Bold" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+        </Grid>
+    </Grid>
+
+</ContentPage>

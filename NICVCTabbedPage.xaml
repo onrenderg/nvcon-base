@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.NICVCTabbedPage">
+    <NavigationPage.TitleView  >
+        <StackLayout x:Name="Custom_Navigation" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+
+            <Image Source="ic_launcher.png"  HeightRequest="40"  VerticalOptions="CenterAndExpand"/>
+            <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="0">
+
+                <Label x:Name="Lbl_Header" Text="NIC Video Conferencing" Style="{StaticResource NavigationLabelColor}" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                      VerticalTextAlignment="Center" />
+                <!--<Label   Text="Department Of Health &amp; Family Welfare, H.P." TextColor="White" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                      VerticalTextAlignment="Center" />-->
+
+            </StackLayout>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_nicvc.png" Clicked="ToolbarItem_Clicked" />
+
+    </ContentPage.ToolbarItems>-->
+</TabbedPage>

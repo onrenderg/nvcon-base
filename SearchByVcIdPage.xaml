@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.SearchByVcIdPage" 
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+             ios:Page.UseSafeArea="true">
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+            <Label x:Name="Lbl_Header" 
+                   Text="NIC Video Conferencing" 
+                   Style="{StaticResource NavigationLabelColor}" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_home.png" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+        <Label x:Name="lbl_user_header1" 
+               Grid.Row="0"
+               Padding="3" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               Margin="2,2,2,0" 
+               FontAttributes="Bold" 
+               TextColor="White" 
+               BackgroundColor="Navy"/>
+        
+        <Label x:Name="lbl_user_header" 
+               Grid.Row="1"
+               Padding="3" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               Margin="2" 
+               FontAttributes="Bold" 
+               TextColor="White" 
+               BackgroundColor="Navy"/>
+        
+        <Border Grid.Row="2" 
+                Margin="5" 
+                Stroke="Navy" 
+                StrokeThickness="2"
+                StrokeShape="RoundRectangle 20" 
+                Padding="5">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                <Entry x:Name="entry_vcid" 
+                       Grid.Column="0"
+                       Placeholder="Enter VC Id To Search" 
+                       PlaceholderColor="Navy"
+                       Keyboard="Numeric" 
+                       MaxLength="7" 
+                       TextColor="Navy"
+                       VerticalOptions="Center"/>
+                <Button x:Name="btn_search" 
+                        Grid.Column="1"
+                        Text="Search" 
+                        Padding="15,10" 
+                        Clicked="btn_search_Clicked" 
+                        BackgroundColor="Navy" 
+                        TextColor="White" 
+                        CornerRadius="30"/>
+            </Grid>
+        </Border>
+        
+        <ScrollView Grid.Row="3">
+            <Border Margin="5" 
+                    Stroke="Navy" 
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 20" 
+                    x:Name="grid_vcdetails" 
+                    IsVisible="false" 
+                    Padding="10">
+                <Grid BackgroundColor="#edfbff" 
+                      RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" 
+                      ColumnDefinitions="4*,6*" 
+                      RowSpacing="5"
+                      Padding="10">
+                    
+                    <HorizontalStackLayout Grid.Row="0" 
+                                          Grid.Column="0" 
+                                          Grid.ColumnSpan="2" 
+                                          Spacing="5" 
+                                          HorizontalOptions="Center">
+                        <Label x:Name="lbl_vcid" 
+                               TextColor="OrangeRed" 
+                               FontSize="18" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center" 
+                               FontAttributes="Bold" 
+                               TextDecorations="Underline"/>
+                        <Label x:Name="lbl_vcidvalue" 
+                               TextColor="OrangeRed" 
+                               FontSize="18" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center" 
+                               FontAttributes="Bold" 
+                               TextDecorations="Underline"/>
+                    </HorizontalStackLayout>
+
+                    <Label x:Name="lbl_vcdate" 
+                           TextColor="Navy" 
+                           HorizontalTextAlignment="Start" 
+                           FontSize="16" 
+                           FontAttributes="Bold" 
+                           Grid.Row="1" 
+                           Grid.Column="0"/>
+                    <Label x:Name="lbl_vcdatevalue" 
+                           HorizontalTextAlignment="Start" 
+                           TextColor="Maroon" 
+                           Grid.Row="1" 
+                           Grid.Column="1" 
+                           FontAttributes="Bold"/>
+
+                    <Label  x:Name="lbl_VCStartTime"  TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16"  FontAttributes="Bold" Grid.Row="2" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VCStartTimevalue" HorizontalOptions="Start" HorizontalTextAlignment="Start" TextColor="Maroon" Grid.Row="2" Grid.Column="1" FontAttributes="Bold"/>
+
+                    <Label  x:Name="lbl_Purpose" TextColor="Navy"  HorizontalTextAlignment="Start"  FontSize="16" FontAttributes="Bold" Grid.Row="3" Grid.Column="0"/>
+                    <Label  x:Name="lbl_Purposevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start"  Grid.Row="3" Grid.Column="1" FontAttributes="Bold"/>
+
+                    <Label  x:Name="lbl_participant" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="4" Grid.Column="0"/>
+                    <Label  x:Name="lbl_participantvalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="4" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_LevelName" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="5" Grid.Column="0"/>
+                    <Label  x:Name="lbl_LevelNamevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="5" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_DeptName" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="6" Grid.Column="0"/>
+                    <Label  x:Name="lbl_DeptNamevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="6" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_MinistryName" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="7" Grid.Column="0"/>
+                    <Label  x:Name="lbl_MinistryNamevalue"  TextColor="Maroon" HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="7" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VCStatus" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="8" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VCStatusvalue"  TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="8" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VCEndTime" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="9" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VCEndTimevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="9" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_participantsExt" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="10" Grid.Column="0"/>
+                    <Label  x:Name="lbl_participantsExtvalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="10" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_webroom" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="11" Grid.Column="0"/>
+                    <Label  x:Name="lbl_webroomvalue"  TextColor="OrangeRed" HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="11" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_hoststudio" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="12" Grid.Column="0"/>
+                    <Label  x:Name="lbl_hoststudiovalue"  TextColor="Red"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="12" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_RequestedBy" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="13" Grid.Column="0"/>
+                    <Label  x:Name="lbl_RequestedByvalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="13" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VcCoordName" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="14" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VcCoordNamevalue"  TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="14" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VcCoordEmail" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="15" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VcCoordEmailvalue"  TextColor="Maroon" HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="15" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VcCoordMobile" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="16" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VcCoordMobilevalue"  TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="16" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VcCoordIpPhone" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="17" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VcCoordIpPhonevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="17" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_VccoordLandline" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="18" Grid.Column="0"/>
+                    <Label  x:Name="lbl_VccoordLandlinevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="18" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_mcuname" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="19" Grid.Column="0"/>
+                    <Label  x:Name="lbl_mcunamevalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="19" Grid.Column="1"/>
+
+                    <Label  x:Name="lbl_mcuip" TextColor="Navy"  HorizontalTextAlignment="Start" FontSize="16" FontAttributes="Bold" Grid.Row="20" Grid.Column="0"/>
+                    <Label  x:Name="lbl_mcuipvalue" TextColor="Maroon"  HorizontalOptions="Start" HorizontalTextAlignment="Start" FontAttributes="Bold" Grid.Row="20" Grid.Column="1"/>
+
+                    <HorizontalStackLayout Grid.Row="21" 
+                                          Grid.Column="0" 
+                                          Grid.ColumnSpan="2" 
+                                          Spacing="10" 
+                                          HorizontalOptions="Fill">
+                        <Button CornerRadius="20" 
+                                HorizontalOptions="Fill" 
+                                CommandParameter="{Binding vcid}" 
+                                Clicked="btn_takemethere_Clicked" 
+                                FontSize="16" 
+                                BackgroundColor="Transparent" 
+                                BorderColor="Navy" 
+                                BorderWidth="1" 
+                                TextColor="Navy" 
+                                IsVisible="{Binding takemetherevisibility}" 
+                                x:Name="btn_takemethere" 
+                                Text="📍 Take Me There" 
+                                FontAttributes="Bold"/>
+                        <Button CornerRadius="20" 
+                                HorizontalOptions="Fill" 
+                                CommandParameter="{Binding vcid}" 
+                                Clicked="btn_alertme_Clicked" 
+                                FontSize="16" 
+                                BackgroundColor="Transparent" 
+                                BorderColor="Navy" 
+                                BorderWidth="1" 
+                                TextColor="Navy" 
+                                FontAttributes="Bold" 
+                                IsVisible="{Binding alertmevisibility}" 
+                                x:Name="btn_alertme" 
+                                Text="⏰ Alert"/>
+                    </HorizontalStackLayout>
+                </Grid>
+            </Border>
+        </ScrollView>
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="4"
+              x:Name="Loading_activity" 
+              BackgroundColor="#C0808080" 
+              IsVisible="false"
+              Padding="20">
+            <Border BackgroundColor="White" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Padding="20" 
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 10">
+                <HorizontalStackLayout Spacing="15">
+                    <ActivityIndicator IsVisible="true" IsRunning="true" Color="Navy"/>
+                    <Label x:Name="Lbl_PleaseWait" 
+                           Text="Please Wait ..." 
+                           TextColor="Black" 
+                           FontAttributes="Bold" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

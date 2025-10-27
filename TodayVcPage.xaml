@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.TodayVcPage"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+             ios:Page.UseSafeArea="true">
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+            <Label x:Name="Lbl_Header" 
+                   Text="NIC Video Conferencing" 
+                   Style="{StaticResource NavigationLabelColor}" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_home.png" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+        <Label x:Name="lbl_user_header1" 
+               Grid.Row="0"
+               Padding="3" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               Margin="2,2,2,0" 
+               FontAttributes="Bold" 
+               TextColor="White" 
+               BackgroundColor="Navy"/>
+        
+        <Label x:Name="lbl_user_header" 
+               Grid.Row="1"
+               Padding="3" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               Margin="2" 
+               FontAttributes="Bold"
+               TextColor="White" 
+               BackgroundColor="Navy" 
+               Text="Today VC"/>
+        <!-- Filter Controls -->
+        <Grid Grid.Row="2" 
+              Margin="5" 
+              RowDefinitions="Auto,Auto" 
+              ColumnDefinitions="40*,60*" 
+              RowSpacing="5">
+            
+            <Label x:Name="lbl_vcstatus" 
+                   Text="Select VC Status" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Start" 
+                   FontAttributes="Bold" 
+                   Grid.Row="0" 
+                   Grid.Column="0"/>
+            <Picker x:Name="picker_vcstatus" 
+                    Title="Select VC Status" 
+                    HorizontalOptions="Fill" 
+                    TextColor="Maroon" 
+                    Grid.Row="0" 
+                    Grid.Column="1" 
+                    SelectedIndexChanged="picker_vcstatus_SelectedIndexChanged" 
+                    ios:Picker.UpdateMode="WhenFinished"/>
+            
+            <Label x:Name="lbl_startingtime" 
+                   Text="Select Starting Time" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Start" 
+                   FontAttributes="Bold" 
+                   Grid.Row="1" 
+                   Grid.Column="0"/>
+            <Picker x:Name="picker_sort" 
+                    Title="Select Starting Time" 
+                    TextColor="Maroon" 
+                    HorizontalOptions="Fill" 
+                    Grid.Row="1" 
+                    Grid.Column="1" 
+                    SelectedIndexChanged="picker_sort_SelectedIndexChanged" 
+                    ios:Picker.UpdateMode="WhenFinished"/>
+        </Grid>
+        
+        <!-- VC List -->
+        <CollectionView x:Name="listView_todayvc" 
+                        Grid.Row="3"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="5" BackgroundColor="White" Stroke="Navy" StrokeThickness="2">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20"/>
+                        </Border.StrokeShape>
+                        <Grid Padding="10" ColumnDefinitions="5*,4*,1*">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="listView_todayvc_ItemTapped" />
+                            </Grid.GestureRecognizers>
+                            <Label Text="{Binding labelname}" 
+                                   TextColor="Maroon" 
+                                   FontSize="Default" 
+                                   Grid.Column="0" 
+                                   FontAttributes="Bold"
+                                   VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding NoOfVc}" 
+                                   TextColor="Navy" 
+                                   HorizontalTextAlignment="Center" 
+                                   FontSize="Default" 
+                                   Grid.Column="1" 
+                                   FontAttributes="Bold"
+                                   VerticalTextAlignment="Center"/>
+                            <Image Source="ic_vcforward" 
+                                   HeightRequest="35" 
+                                   Grid.Column="2"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+        <!-- Loading Overlay -->
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="4"
+              x:Name="Loading_activity" 
+              BackgroundColor="#C0808080" 
+              IsVisible="false"
+              Padding="20">
+            <Border BackgroundColor="White" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Padding="20" 
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 10">
+                <HorizontalStackLayout Spacing="15">
+                    <ActivityIndicator IsVisible="true" IsRunning="true" Color="Navy"/>
+                    <Label x:Name="Lbl_PleaseWait" 
+                           Text="Please Wait ..." 
+                           TextColor="Black" 
+                           FontAttributes="Bold" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>

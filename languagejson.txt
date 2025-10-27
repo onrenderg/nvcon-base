@@ -1,0 +1,1723 @@
+﻿{
+    "languagemaster": [
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "Preferences",
+            "ResourceValue": "Preferences",
+            "LocalResourceValue": "सेटिंग्स",
+            "Sequence": "4"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "confirmprefer",
+            "ResourceKey": "confirmprefer",
+            "ResourceValue": "Confirm Your Preferences",
+            "LocalResourceValue": "अपनी प्राथमिकताओं की पुष्टि करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "save",
+            "ResourceKey": "save",
+            "ResourceValue": "Save",
+            "LocalResourceValue": "सहेजें",
+            "Sequence": "1"
+        },
+     
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Version",
+            "ResourceKey": "Version",
+            "ResourceValue": "v",
+            "LocalResourceValue": "v",
+            "Sequence": "1"
+        },
+
+         {
+            "StateID": "2",
+            "MultipleResourceKey": "logoutmessage",
+            "ResourceKey": "logoutmessage",
+            "ResourceValue": "Are You Sure You Want To Logout.",
+            "LocalResourceValue": "क्या आप लॉग आउट करना चाहते हैं।",
+            "Sequence": "1"
+        },
+
+         {
+            "StateID": "2",
+            "MultipleResourceKey": "loadtodayvc",
+            "ResourceKey": "loadtodayvc",
+            "ResourceValue": "Loading Today Vc...",
+            "LocalResourceValue": "आज की वीसी लोड हो रही है...",
+            "Sequence": "1"
+        },
+         {
+            "StateID": "2",
+            "MultipleResourceKey": "loadimpvc",
+            "ResourceKey": "loadimpvc",
+            "ResourceValue": "Loading Important Vc...",
+            "LocalResourceValue": "महत्वपूर्ण वीसी लोड हो रही है...",
+            "Sequence": "1"
+        },
+         {
+            "StateID": "2",
+            "MultipleResourceKey": "loadvcdtls",
+            "ResourceKey": "loadvcdtls",
+            "ResourceValue": "Loading Vc Details...",
+            "LocalResourceValue": "वीसी विवरण लोड हो रही है...",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "loadschedulevc",
+            "ResourceKey": "loadschedulevc",
+            "ResourceValue": "Loading Schedule Vc...",
+            "LocalResourceValue": "अनुसूचित वीसी लोड हो रही है...",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "pleasewait",
+            "ResourceKey": "pleasewait",
+            "ResourceValue": "Please Wait...",
+            "LocalResourceValue": "कृपया प्रतीक्षा करें ...",
+            "Sequence": "1"
+        },
+
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "impvcdtls",
+            "ResourceKey": "impvcdtls",
+            "ResourceValue": "Important Vc Details",
+            "LocalResourceValue": "महत्वपूर्ण वीसी विवरण",
+            "Sequence": "1"
+        },
+         {
+            "StateID": "2",
+            "MultipleResourceKey": "schvcdtls",
+            "ResourceKey": "schvcdtls",
+            "ResourceValue": "Schedule Vc Details",
+            "LocalResourceValue": "अनुसूचित वीसी विवरण",
+            "Sequence": "1"
+        },
+
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "language1",
+            "ResourceKey": "language1",
+            "ResourceValue": "Language",
+            "LocalResourceValue": "भाषा",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "SearchVCID",
+            "ResourceValue": "Search By VC ID",
+            "LocalResourceValue": "वीसी आईडी से खोजें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "language",
+            "ResourceKey": "language",
+            "ResourceValue": "Change Language",
+            "LocalResourceValue": "भाषा चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "language_drop_down",
+            "ResourceKey": "English",
+            "ResourceValue": "English",
+            "LocalResourceValue": "अंग्रेज़ी",
+            "Sequence": "0"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "language_drop_down",
+            "ResourceKey": "Hindi",
+            "ResourceValue": "Hindi",
+            "LocalResourceValue": "हिंदी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "Home",
+            "ResourceValue": "Home",
+            "LocalResourceValue": "होम",
+            "Sequence": "0"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "update",
+            "ResourceKey": "update",
+            "ResourceValue": "Update",
+            "LocalResourceValue": "अपडेट",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "msg_error_service_connection",
+            "ResourceKey": "msg_error_service_connection",
+            "ResourceValue": "Could not get latest Data",
+            "LocalResourceValue": "ताजा आंकड़ों प्राप्त नहीं कर सका",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "ScheduleVC",
+            "ResourceValue": "Scheduled VC",
+            "LocalResourceValue": "अनुसूचित वीसी",
+            "Sequence": "2"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "headerText1",
+            "ResourceKey": "headerText1",
+            "ResourceValue": "WELCOME TO NIC-VC",
+            "LocalResourceValue": "एनआईसी-वीसी में आपका स्वागत है",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "footer",
+            "ResourceKey": "footer",
+            "ResourceValue": "NIC-VC By VC Divison, NIC Headquarters.\r\nDeveloped By NIC-Himachal Pradesh",
+            "LocalResourceValue": "एनआईसी-वीसी द्वारा वीसी डिवीजन, एनआईसी मुख्यालय | एनआईसी-हिमाचल प्रदेश द्वारा विकसित",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "changestatedis",
+            "ResourceKey": "changestatedis",
+            "ResourceValue": "Change State, District & Studio",
+            "LocalResourceValue": "राज्य, जिला और स्टूडियो बदलें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "state",
+            "ResourceKey": "state",
+            "ResourceValue": "Select State",
+            "LocalResourceValue": "राज्य चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "district",
+            "ResourceKey": "district",
+            "ResourceValue": "Select District",
+            "LocalResourceValue": "जिला चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "level",
+            "ResourceKey": "level",
+            "ResourceValue": "Level",
+            "LocalResourceValue": "स्तर चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "TodayVCDetailsAt",
+            "ResourceKey": "TodayVCDetailsAt",
+            "ResourceValue": "Today VC Details At",
+            "LocalResourceValue": "आज की वीसी का विवरण",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "submit",
+            "ResourceKey": "submit",
+            "ResourceValue": "SUBMIT",
+            "LocalResourceValue": "सहेजें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "todayvc",
+            "ResourceKey": "todayvc",
+            "ResourceValue": "Today's VC",
+            "LocalResourceValue": "आज की वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcsessionin",
+            "ResourceKey": "vcsessionin",
+            "ResourceValue": "VC In",
+            "LocalResourceValue": "में वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "todayimpvc",
+            "ResourceKey": "todayimpvc",
+            "ResourceValue": "Imp VC Today",
+            "LocalResourceValue": "महत्वपूर्ण वीसी आज की",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "upcomingimpvc",
+            "ResourceKey": "upcomingimpvc",
+            "ResourceValue": "Upcoming Important VC",
+            "LocalResourceValue": "आगामी महत्वपूर्ण वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "totalstudio",
+            "ResourceKey": "totalstudio",
+            "ResourceValue": "Total Studios",
+            "LocalResourceValue": "कुल स्टूडियो",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "maintainenance",
+            "ResourceKey": "maintainenance",
+            "ResourceValue": "Under Maintenance Studios",
+            "LocalResourceValue": "रखरखाव स्टूडियो के तहत",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "state1",
+            "ResourceKey": "state1",
+            "ResourceValue": "State",
+            "LocalResourceValue": "राज्य",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "district1",
+            "ResourceKey": "district1",
+            "ResourceValue": "District",
+            "LocalResourceValue": "जिला",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "national",
+            "ResourceKey": "national",
+            "ResourceValue": "National",
+            "LocalResourceValue": "राष्ट्रीय",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "entervcid",
+            "ResourceKey": "entervcid",
+            "ResourceValue": "Enter VC ID",
+            "LocalResourceValue": "वीसी आईडी दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "search",
+            "ResourceKey": "search",
+            "ResourceValue": "SEARCH",
+            "LocalResourceValue": "खोजें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "searchtext",
+            "ResourceKey": "searchtext",
+            "ResourceValue": "Type In Search Bar To Filter Results In Realtime",
+            "LocalResourceValue": "रियल टाइम में परिणाम फ़िल्टर करने के लिए खोज बार में टाइप करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "selectstatedis",
+            "ResourceKey": "selectstatedis",
+            "ResourceValue": "Select State, District & Studio",
+            "LocalResourceValue": "कृपया राज्य, जिला और स्टूडियो का चयन करें |",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "msg_success_updated",
+            "ResourceKey": "msg_success",
+            "ResourceValue": "Data Successfully Loaded !",
+            "LocalResourceValue": "डेटा सफलतापूर्वक लोड हो गया है !",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "please_wait",
+            "ResourceKey": "please_wait",
+            "ResourceValue": "Please wait...",
+            "LocalResourceValue": "कृपया प्रतीक्षा करें...",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "sortby",
+            "ResourceKey": "sortby",
+            "ResourceValue": "Sort By",
+            "LocalResourceValue": "अनुसार क्रमबद्ध करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "timevcid",
+            "ResourceKey": "timevcid",
+            "ResourceValue": "Time/VC-ID",
+            "LocalResourceValue": "समय / वीसी आईडी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "level1",
+            "ResourceKey": "level1",
+            "ResourceValue": "Level",
+            "LocalResourceValue": "स्तर",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "ministry",
+            "ResourceKey": "ministry",
+            "ResourceValue": "Ministry",
+            "LocalResourceValue": "मंत्रालय",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "textsearch",
+            "ResourceKey": "textsearch",
+            "ResourceValue": "Search",
+            "LocalResourceValue": "खोजें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "edittextsearch",
+            "ResourceKey": "edittextsearch",
+            "ResourceValue": "Search Date,Time,VC-ID,Purpose,Status,Studio/Level/Dept/Ministry Name",
+            "LocalResourceValue": "खोजें वीसी-आईडी, प्रयोजन, स्टूडियो / स्तर / विभाग / मंत्रालय का नाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "time",
+            "ResourceKey": "time",
+            "ResourceValue": "Time",
+            "LocalResourceValue": "समय",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcid",
+            "ResourceKey": "vcid",
+            "ResourceValue": "VC-ID",
+            "LocalResourceValue": "वीसी आईडी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcstarttime",
+            "ResourceKey": "vcstarttime",
+            "ResourceValue": "VC Start Time",
+            "LocalResourceValue": "वीसी शुरू होने का समय",
+            "Sequence": "1"
+        },
+          {
+            "StateID": "2",
+            "MultipleResourceKey": "selstarttime",
+            "ResourceKey": "selstarttime",
+            "ResourceValue": "Select VC Starting Time",
+            "LocalResourceValue": "वीसी प्रारंभ समय चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcdate",
+            "ResourceKey": "vcdate",
+            "ResourceValue": "VC Date",
+            "LocalResourceValue": "वीसी की तिथि",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "purpose",
+            "ResourceKey": "purpose",
+            "ResourceValue": "Purpose",
+            "LocalResourceValue": "उद्देश्य",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcstudioname",
+            "ResourceKey": "vcstudioname",
+            "ResourceValue": "VC Studio Name",
+            "LocalResourceValue": "वीसी स्टूडियो का नाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "department",
+            "ResourceKey": "department",
+            "ResourceValue": "Department",
+            "LocalResourceValue": "विभाग",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noofvc",
+            "ResourceKey": "noofvc",
+            "ResourceValue": "No. of Vc's",
+            "LocalResourceValue": "वीसी की संख्या",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcstatus",
+            "ResourceKey": "vcstatus",
+            "ResourceValue": "VC Status",
+            "LocalResourceValue": "वीसी स्थिति",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "from",
+            "ResourceKey": "from",
+            "ResourceValue": "From Date",
+            "LocalResourceValue": "आरंभ तिथि",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "to",
+            "ResourceKey": "to",
+            "ResourceValue": "To Date",
+            "LocalResourceValue": "समाप्ति तिथि",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "norecords",
+            "ResourceKey": "norecords",
+            "ResourceValue": "No Records Found !",
+            "LocalResourceValue": "कोई रिकॉर्ड नहीं मिला !",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "Cancelled VC",
+            "ResourceValue": "Cancelled VC",
+            "LocalResourceValue": "रद्द की हुई वीसी",
+            "Sequence": "3"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "personalinfo",
+            "ResourceKey": "personalinfo",
+            "ResourceValue": "Personal Information",
+            "LocalResourceValue": "व्यक्तिगत जानकारी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "updatepersonalinfo",
+            "ResourceKey": "updatepersonalinfo",
+            "ResourceValue": "Update Personal Information",
+            "LocalResourceValue": "व्यक्तिगत जानकारी अपडेट करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "mobileno",
+            "ResourceKey": "mobileno",
+            "ResourceValue": "Mobile",
+            "LocalResourceValue": "मोबाइल",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "entmobileno",
+            "ResourceKey": "entmobileno",
+            "ResourceValue": "Enter Mobile",
+            "LocalResourceValue": "मोबाइल दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "name",
+            "ResourceKey": "name",
+            "ResourceValue": "Name",
+            "LocalResourceValue": "नाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "entname",
+            "ResourceKey": "entname",
+            "ResourceValue": "Enter Name",
+            "LocalResourceValue": "नाम दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "location",
+            "ResourceKey": "location",
+            "ResourceValue": "Enter Location",
+            "LocalResourceValue": "स्थान दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "department1",
+            "ResourceKey": "department1",
+            "ResourceValue": "Department",
+            "LocalResourceValue": "विभाग",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "entdepartment1",
+            "ResourceKey": "entdepartment1",
+            "ResourceValue": "Enter Department",
+            "LocalResourceValue": "विभाग दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "designation",
+            "ResourceKey": "designation",
+            "ResourceValue": "Designation",
+            "LocalResourceValue": "पदनाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "entdesignation",
+            "ResourceKey": "entdesignation",
+            "ResourceValue": "Enter Designation",
+            "LocalResourceValue": "पदनाम दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "email",
+            "ResourceKey": "email",
+            "ResourceValue": "E-mail",
+            "LocalResourceValue": "ई-मेल",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "entemail",
+            "ResourceKey": "entemail",
+            "ResourceValue": "Enter E-mail",
+            "LocalResourceValue": "ई-मेल दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "getotp",
+            "ResourceKey": "getotp",
+            "ResourceValue": "Get OTP",
+            "LocalResourceValue": "OTP प्राप्त करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "enterotp",
+            "ResourceKey": "enterotp",
+            "ResourceValue": "Enter OTP",
+            "LocalResourceValue": "OTP दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "submitotp",
+            "ResourceKey": "submitotp",
+            "ResourceValue": "Submit OTP",
+            "LocalResourceValue": "OTP जमा करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "VCEndTime",
+            "ResourceKey": "VCEndTime",
+            "ResourceValue": "End Time",
+            "LocalResourceValue": "समाप्त समय",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "livevc",
+            "ResourceKey": "livevc",
+            "ResourceValue": "Ongoing VC",
+            "LocalResourceValue": "ऑनगोइंग वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "feedbackidbased",
+            "ResourceKey": "feedbackidbased",
+            "ResourceValue": "Feedback (VC-ID Based)",
+            "LocalResourceValue": "फ़ीडबैक आईडी आधारित",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "savefeedback",
+            "ResourceKey": "savefeedback",
+            "ResourceValue": "Send Feedback",
+            "LocalResourceValue": "प्रतिक्रिया भेजें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "selectvcid",
+            "ResourceKey": "selectvcid",
+            "ResourceValue": "Select VC ID",
+            "LocalResourceValue": "वीसी आईडी चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "quality",
+            "ResourceKey": "quality",
+            "ResourceValue": "Quality of VC",
+            "LocalResourceValue": "वीसी की गुणवत्ता ?",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "studiosupport",
+            "ResourceKey": "studiosupport",
+            "ResourceValue": "Studio Support",
+            "LocalResourceValue": "स्टूडियो सहायता ?",
+            "Sequence": "1"
+        },
+     
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "feedbackqrbased",
+            "ResourceKey": "feedbackqrbased",
+            "ResourceValue": "Feedback (QR Code based)",
+            "LocalResourceValue": "क्यूआर कोड आधारित प्रतिक्रिया",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "studioid",
+            "ResourceKey": "studioid",
+            "ResourceValue": "Studio ID",
+            "LocalResourceValue": "स्टूडियो आईडी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "todayvc1",
+            "ResourceKey": "todayvc1",
+            "ResourceValue": "Today's VC",
+            "LocalResourceValue": "आज की वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "takemethere",
+            "ResourceKey": "takemethere",
+            "ResourceValue": "Take Me There",
+            "LocalResourceValue": "मुझे वहां ले चलो",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "alertme",
+            "ResourceKey": "alertme",
+            "ResourceValue": "Alert Me",
+            "LocalResourceValue": "मुझे सतर्क करो",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "viewalert",
+            "ResourceKey": "viewalert",
+            "ResourceValue": "View Alerts",
+            "LocalResourceValue": "अलर्ट देखें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "viewalertvcdtls",
+            "ResourceKey": "viewalertvcdtls",
+            "ResourceValue": "View Alerts - Vc Details ",
+            "LocalResourceValue": "अलर्ट देखें - वीसी विवरण",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "deletevcid",
+            "ResourceKey": "deletevcid",
+            "ResourceValue": "Surely want to Delete the Alert For VC ID",
+            "LocalResourceValue": "निश्चित रूप से वीसी आईडी के लिए अलर्ट हटाना चाहते हैं",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "delete",
+            "ResourceKey": "delete",
+            "ResourceValue": "Delete",
+            "LocalResourceValue": "हटाना",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "alertalready",
+            "ResourceKey": "alertalready",
+            "ResourceValue": "Alert Already Saved",
+            "LocalResourceValue": "अलर्ट पहले से ही सहेजा हुआ है",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "alertsave",
+            "ResourceKey": "alertsave",
+            "ResourceValue": "Alert Successfully Saved !",
+            "LocalResourceValue": "अलर्ट सफलतापूर्वक सहेजा गया",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "deletesuccess",
+            "ResourceKey": "deletesuccess",
+            "ResourceValue": "Sucessfully Deleted",
+            "LocalResourceValue": "अलर्ट सफलतापूर्वक हटाया गया !",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nolivevc",
+            "ResourceKey": "nolivevc",
+            "ResourceValue": "No Ongoing VC At Current Time.",
+            "LocalResourceValue": "वर्तमान समय में कोई वीसी नहीं है।",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "notodayvc",
+            "ResourceKey": "notodayvc",
+            "ResourceValue": "No VC for Today Found.",
+            "LocalResourceValue": "आज के लिए कोई वीसी नहीं है",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "todayvcloaded",
+            "ResourceKey": "todayvcloaded",
+            "ResourceValue": "Today's VC Successfully Loaded",
+            "LocalResourceValue": "आज की वीसी सफलतापूर्वक लोड हो गयी है",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "studioname",
+            "ResourceKey": "studioname",
+            "ResourceValue": "Studio Name",
+            "LocalResourceValue": "स्टूडियो नाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "tendigitmobile",
+            "ResourceKey": "tendigitmobile",
+            "ResourceValue": "Enter 10 Digit Mobile Number",
+            "LocalResourceValue": "10 अंक मोबाइल नंबर दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "correct_mobile",
+            "ResourceKey": "correct_mobile",
+            "ResourceValue": "Please enter correct mobile number start with 7 or 8 or 9",
+            "LocalResourceValue": "कृपया ७ या ८ या ९ संख्या के साथ शुरू होने वाला मोबाइल नंबर दर्ज करें",
+            "Sequence": "0"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "correct_name",
+            "ResourceKey": "correct_name",
+            "ResourceValue": "Please enter correct name",
+            "LocalResourceValue": "कृपया सही नाम दर्ज करें",
+            "Sequence": "0"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "correct_designation",
+            "ResourceKey": "correct_designation",
+            "ResourceValue": "Enter Correct Designation",
+            "LocalResourceValue": "सही पदनाम दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "correct_department",
+            "ResourceKey": "correct_department",
+            "ResourceValue": "Enter Correct Department",
+            "LocalResourceValue": "सही विभाग दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "correct_email",
+            "ResourceKey": "correct_email",
+            "ResourceValue": "Please enter correct email",
+            "LocalResourceValue": "कृपया सही ईमेल दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "setmobile",
+            "ResourceKey": "setmobile",
+            "ResourceValue": "Kindly Set Mobile No.",
+            "LocalResourceValue": "कृपया मोबाइल नंबर सेट करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nointernet",
+            "ResourceKey": "nointernet",
+            "ResourceValue": "No Internet Connection Found !",
+            "LocalResourceValue": "कोई इंटरनेट कनेक्शन नहीं मिला!",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "selectstudio",
+            "ResourceKey": "selectstudio",
+            "ResourceValue": "Select Studio",
+            "LocalResourceValue": "स्टूडियो का चयन करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "studio",
+            "ResourceKey": "studio",
+            "ResourceValue": "Studio",
+            "LocalResourceValue": "स्टूडियो चुनें",
+            "Sequence": "1"
+        },
+         {
+            "StateID": "2",
+            "MultipleResourceKey": "studio1",
+            "ResourceKey": "studio1",
+            "ResourceValue": "Studio",
+            "LocalResourceValue": "स्टूडियो",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "aboutus",
+            "ResourceValue": "About Us",
+            "LocalResourceValue": "हमारे बारे में",
+            "Sequence": "5"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "poweredby",
+            "ResourceKey": "poweredby",
+            "ResourceValue": "Powered By",
+            "LocalResourceValue": "निर्माता",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nic",
+            "ResourceKey": "nic",
+            "ResourceValue": "National Informatics Centre Himachal Pradesh",
+            "LocalResourceValue": "राष्ट्रीय सूचना-विज्ञान केंद्र हिमाचल प्रदेश",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "mobilecenter",
+            "ResourceKey": "mobilecenter",
+            "ResourceValue": "Centre Of Competence For Mobile App Development",
+            "LocalResourceValue": "मोबाइल अनुप्रयोग विकास क्षमता केन्द्र",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "niccontact",
+            "ResourceKey": "niccontact",
+            "ResourceValue": "NIC HP",
+            "LocalResourceValue": "एनआईसी एचपी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nicwebsiteinfo",
+            "ResourceKey": "nicwebsiteinfo",
+            "ResourceValue": "Website",
+            "LocalResourceValue": "वेबसाइट",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "niccontactinfo",
+            "ResourceKey": "niccontactinfo",
+            "ResourceValue": "Call",
+            "LocalResourceValue": "कॉल करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nicemailinfo",
+            "ResourceKey": "nicemailinfo",
+            "ResourceValue": "E-Mail",
+            "LocalResourceValue": "ई-मेल",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "developedby",
+            "ResourceKey": "developedby",
+            "ResourceValue": "Developed By",
+            "LocalResourceValue": "विकसित द्वारा",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "novcfeedback",
+            "ResourceKey": "novcfeedback",
+            "ResourceValue": "No VC/Record Found For Selected Studio !",
+            "LocalResourceValue": "चयनित स्टूडियो के लिए कोई वीसी / रिकार्ड नहीं मिला !",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "important",
+            "ResourceKey": "important",
+            "ResourceValue": "Important",
+            "LocalResourceValue": "महत्वपूर्ण",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "date",
+            "ResourceKey": "date",
+            "ResourceValue": "Date",
+            "LocalResourceValue": "तारीख",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "cancelled",
+            "ResourceKey": "cancelled",
+            "ResourceValue": "Cancelled",
+            "LocalResourceValue": "रद्द",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "selectvc",
+            "ResourceKey": "selectvc",
+            "ResourceValue": "Select VC",
+            "LocalResourceValue": "वीसी चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vctime",
+            "ResourceKey": "vctime",
+            "ResourceValue": "VC Time",
+            "LocalResourceValue": "वीसी टाइम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "SelRating",
+            "ResourceKey": "SelRating",
+            "ResourceValue": "Select rating for overall VC experience",
+            "LocalResourceValue": "समग्र वीसी अनुभव के लिए रेटिंग चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "lastupdate",
+            "ResourceKey": "lastupdate",
+            "ResourceValue": "Last Synced On :",
+            "LocalResourceValue": "अंतिम बार सिंक किया गया : ",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "yes",
+            "ResourceKey": "yes",
+            "ResourceValue": "YES",
+            "LocalResourceValue": "हाँ",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "no",
+            "ResourceKey": "no",
+            "ResourceValue": "NO",
+            "LocalResourceValue": "नहीं",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "alertdays",
+            "ResourceKey": "alertdays",
+            "ResourceValue": "Start Notification (In Days) Before VC Date",
+            "LocalResourceValue": "प्रारंभ अधिसूचना वीसी तिथि से पहले (दिन में)",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nolivevcimp",
+            "ResourceKey": "nolivevcimp",
+            "ResourceValue": "No Ongoing Important VC At Current Time.",
+            "LocalResourceValue": "वर्तमान समय में कोई महत्वपूर्ण वीसी नहीं है।",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "changenotification",
+            "ResourceKey": "changenotification",
+            "ResourceValue": "Change Notification Period For VC Id - ",
+            "LocalResourceValue": "अधिसूचना अवधि बदलें वीसी आईडी -",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nocancelvc",
+            "ResourceKey": "nocancelvc",
+            "ResourceValue": "No VC Cancelled For Today.",
+            "LocalResourceValue": "आज के लिए कोई वीसी रद्द नहीं।",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "cancel",
+            "ResourceKey": "cancel",
+            "ResourceValue": "Cancel",
+            "LocalResourceValue": "रद्द करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noimptodayvc",
+            "ResourceKey": "noimptodayvc",
+            "ResourceValue": "No Important VC for Today Found.",
+            "LocalResourceValue": "आज के लिए कोई महत्वपूर्ण वीसी नहीं है",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nocancelvc1",
+            "ResourceKey": "nocancelvc1",
+            "ResourceValue": "No Cancelled VC Found.",
+            "LocalResourceValue": "कोई रद्द वीसी नहीं मिली ।",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "mapstudio",
+            "ResourceKey": "mapstudio",
+            "ResourceValue": "Latitude & Longitude For This Studio Are Not Mapped. Kindly Map.",
+            "LocalResourceValue": "अक्षांश और देशांतर के लिए यह स्टूडियो मैप नहीं हैं | कृपया मैप करें |",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "participantsExt",
+            "ResourceKey": "participantsExt",
+            "ResourceValue": "OUTSIDE NICNET SITES",
+            "LocalResourceValue": "एनआईसी नेट साइटों से बाहर",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "webroom",
+            "ResourceKey": "webroom",
+            "ResourceValue": "Web Room",
+            "LocalResourceValue": "वेब कक्ष",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "hoststudio",
+            "ResourceKey": "hoststudio",
+            "ResourceValue": "Host Studio",
+            "LocalResourceValue": "होस्ट स्टूडियो",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "selectdate",
+            "ResourceKey": "selectdate",
+            "ResourceValue": "Select Date",
+            "LocalResourceValue": "तारीख़ चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "multistate",
+            "ResourceKey": "multistate",
+            "ResourceValue": "Multipoint Managed By State",
+            "LocalResourceValue": "मल्टीपॉईंट राज्य द्वारा प्रबंधित",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "multinichq",
+            "ResourceKey": "multinichq",
+            "ResourceValue": "Multipoint Managed By NIC HQ",
+            "LocalResourceValue": "एनआईसी मुख्यालय द्वारा प्रबंधित बहुपक्षीय",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "ptp",
+            "ResourceKey": "ptp",
+            "ResourceValue": "Point To Point",
+            "LocalResourceValue": "प्वाइंट टु प्वाइंट",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "cic",
+            "ResourceKey": "cic",
+            "ResourceValue": "CIC",
+            "LocalResourceValue": "सीआईसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "OngoingConfat",
+            "ResourceKey": "OngoingConfat",
+            "ResourceValue": "Ongoing Conference",
+            "LocalResourceValue": "चल रहे सम्मेलन",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "ImportantVc",
+            "ResourceKey": "ImportantVc",
+            "ResourceValue": "Important Vc's",
+            "LocalResourceValue": "महत्वपूर्ण वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noofstudio",
+            "ResourceKey": "noofstudio",
+            "ResourceValue": "No. of Studio's",
+            "LocalResourceValue": "स्टूडियो की संख्या",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "MPNIC",
+            "ResourceKey": "MPNIC",
+            "ResourceValue": "MultiPoint VC Managed By NICHQ",
+            "LocalResourceValue": "एनआईसी मुख्यालय द्वारा बहुपक्षीय वीसी प्रबंधित",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "RequestedBy",
+            "ResourceKey": "RequestedBy",
+            "ResourceValue": "Requested By",
+            "LocalResourceValue": "द्वारा अनुरोध किया गया",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Email",
+            "ResourceKey": "Email",
+            "ResourceValue": "Email",
+            "LocalResourceValue": "ई-मेल",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "IpPhone",
+            "ResourceKey": "IpPhone",
+            "ResourceValue": "IpPhone",
+            "LocalResourceValue": "आईपी ​​फोन",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Name",
+            "ResourceKey": "Name",
+            "ResourceValue": "VC Coordinator Name",
+            "LocalResourceValue": "वीसी समन्वयक का नाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "mcuip",
+            "ResourceKey": "mcuip",
+            "ResourceValue": "MCU IP",
+            "LocalResourceValue": "एमसीयू आईपी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "mcuname",
+            "ResourceKey": "mcuname",
+            "ResourceValue": "MCU Name",
+            "LocalResourceValue": "एमसीयू का नाम",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Mobile",
+            "ResourceKey": "Mobile",
+            "ResourceValue": "Mobile",
+            "LocalResourceValue": "मोबाइल",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Landline",
+            "ResourceKey": "Landline",
+            "ResourceValue": "Landline",
+            "LocalResourceValue": "लैंडलाइन",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "successloaded",
+            "ResourceKey": "successloaded",
+            "ResourceValue": "Successfully Loaded",
+            "LocalResourceValue": "सफलतापूर्वक लोड किया गया",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "novcfnd",
+            "ResourceKey": "novcfnd",
+            "ResourceValue": "No VC Found !",
+            "LocalResourceValue": "कोई वीसी नहीं मिली !",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "impvcloaded",
+            "ResourceKey": "impvcloaded",
+            "ResourceValue": "Important VC Successfully Loaded",
+            "LocalResourceValue": "महत्वपूर्ण उपाध्यक्ष सफलतापूर्वक भरे गए",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noimpvc",
+            "ResourceKey": "noimpvc",
+            "ResourceValue": "No Important VC",
+            "LocalResourceValue": "कोई महत्वपूर्ण उपकुलपति नहीं",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "MPSTATE",
+            "ResourceKey": "MPSTATE",
+            "ResourceValue": "Multipoint VC Managed By State",
+            "LocalResourceValue": "बहुउद्देशीय वीसी राज्य द्वारा प्रबंधित",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "P2P",
+            "ResourceKey": "P2P",
+            "ResourceValue": "Point To Point VC",
+            "LocalResourceValue": "प्वाइंट टु प्वाइंट वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "totalvcs",
+            "ResourceKey": "totalvcs",
+            "ResourceValue": "Total VC'S",
+            "LocalResourceValue": "कुल वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "notifydays",
+            "ResourceKey": "notifydays",
+            "ResourceValue": "Notification Days Successfully Updated.",
+            "LocalResourceValue": "अधिसूचना दिन सफलतापूर्वक अद्यतन",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "selectdays",
+            "ResourceKey": "selectdays",
+            "ResourceValue": "Select Days",
+            "LocalResourceValue": "दिनों का चयन करें",
+            "Sequence": "1"
+        },
+
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vdconf",
+            "ResourceKey": "vdconf",
+            "ResourceValue": "Video Conference's",
+            "LocalResourceValue": "वीडियो कॉन्फ्रेंस",
+            "Sequence": "1"
+        },
+          {
+            "StateID": "2",
+            "MultipleResourceKey": "nicvdconf",
+            "ResourceKey": "nicvdconf",
+            "ResourceValue": "NIC Video Conferencing",
+            "LocalResourceValue": "एनआईसी वीडियो कॉन्फ्रेंसिंग",
+            "Sequence": "1"
+        },
+
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "NICVC",
+            "ResourceKey": "NICVC",
+            "ResourceValue": "NICVC",
+            "LocalResourceValue": "एनआईसी वीसी",
+            "Sequence": "1"
+        },
+
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "close",
+            "ResourceKey": "close",
+            "ResourceValue": "Close",
+            "LocalResourceValue": "बंद करे",
+            "Sequence": "1"
+        },
+
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "dashtype",
+            "ResourceKey": "dashtype",
+            "ResourceValue": "Dashboard",
+            "LocalResourceValue": "डैशबोर्ड",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "upcoming",
+            "ResourceKey": "upcoming",
+            "ResourceValue": "Upcoming",
+            "LocalResourceValue": "आगामी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Ongoing",
+            "ResourceKey": "Ongoing",
+            "ResourceValue": "Ongoing",
+            "LocalResourceValue": "ऑनगोइंग",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Completed",
+            "ResourceKey": "Completed",
+            "ResourceValue": "Completed",
+            "LocalResourceValue": "समाप्त",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noimpcompvc",
+            "ResourceKey": "noimpcompvc",
+            "ResourceValue": "No Important Completed VC Found.",
+            "LocalResourceValue": "कोई महत्वपूर्ण पूर्ण वीसी नहीं मिली",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noimpupvc",
+            "ResourceKey": "noimpupvc",
+            "ResourceValue": "No Upcoming Important VC Found.",
+            "LocalResourceValue": "कोई आगामी महत्वपूर्ण वीसी नहीं मिली",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "login",
+            "ResourceKey": "login",
+            "ResourceValue": "LOGIN",
+            "LocalResourceValue": "लॉग इन",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "logout",
+            "ResourceKey": "logout",
+            "ResourceValue": "LOGOUT",
+            "LocalResourceValue": "लॉग आउट",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "username",
+            "ResourceKey": "username",
+            "ResourceValue": "Enter User Name/ Email Id",
+            "LocalResourceValue": "उपयोगकर्ता नाम / ईमेल आईडी दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "password",
+            "ResourceKey": "password",
+            "ResourceValue": "Enter Password",
+            "LocalResourceValue": "पासवर्ड दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items",
+            "ResourceKey": "logout",
+            "ResourceValue": "Logout",
+            "LocalResourceValue": "लॉगआउट",
+            "Sequence": "6"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items1",
+            "ResourceKey": "Login",
+            "ResourceValue": "Login",
+            "LocalResourceValue": "लॉगिन",
+            "Sequence": "0"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "currentmonth",
+            "ResourceKey": "currentmonth",
+            "ResourceValue": "Current Month Video Conference",
+            "LocalResourceValue": "वर्तमान महीना वीडियो सम्मेलन",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "noupcoming",
+            "ResourceKey": "noupcoming",
+            "ResourceValue": "No Upcoming VC For The Day Found.",
+            "LocalResourceValue": "दिन के लिए कोई आगामी वीसी नहीं मिली",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "TotalHours",
+            "ResourceKey": "TotalHours",
+            "ResourceValue": "Total Hours",
+            "LocalResourceValue": "कुल घंटे",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "MonthName",
+            "ResourceKey": "MonthName",
+            "ResourceValue": "Month",
+            "LocalResourceValue": "महीना",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "TotalVc",
+            "ResourceKey": "TotalVc",
+            "ResourceValue": "Total Vc's",
+            "LocalResourceValue": "कुल वीसी",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "YearWise",
+            "ResourceKey": "YearWise",
+            "ResourceValue": "VC Details (Yearly)",
+            "LocalResourceValue": "कुलपति विवरण (वार्षिक)",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "LocalStudio",
+            "ResourceKey": "LocalStudio",
+            "ResourceValue": "Local Studio",
+            "LocalResourceValue": "स्थानीय स्टूडियो",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "vcdivison",
+            "ResourceKey": "vcdivison",
+            "ResourceValue": "VC Divison, New Delhi",
+            "LocalResourceValue": "वीसी डिवीजन, नई दिल्ली",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "All",
+            "ResourceKey": "All",
+            "ResourceValue": "All",
+            "LocalResourceValue": "सब",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "query",
+            "ResourceKey": "query",
+            "ResourceValue": "In case of any query related to Login credentials, Kindly contact VC Divison, NIC Hqrs. at vc-delhi@nic.in",
+            "LocalResourceValue": "लॉगिन से संबंधित किसी भी प्रश्न के मामले में, कृपया वीसी डिवीजन, एनआईसी अधिकारियों से vc-delhi@nic.in पर संपर्क करें।",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Alltest",
+            "ResourceKey": "Alltest",
+            "ResourceValue": "Alltest",
+            "LocalResourceValue": "Alltest",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "remarks",
+            "ResourceKey": "remarks",
+            "ResourceValue": "Enter Remarks",
+            "LocalResourceValue": "टिप्पणियां दर्ज करें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "Choose Level",
+            "ResourceKey": "Choose Level",
+            "ResourceValue": "Choose Level",
+            "LocalResourceValue": "स्तर चुनें",
+            "Sequence": "1"
+        },
+        {
+            "StateID": "2",
+            "MultipleResourceKey": "nav_drawer_items1",
+            "ResourceKey": "help",
+            "ResourceValue": "Help",
+            "LocalResourceValue": "मदद",
+            "Sequence": "7"
+        },
+
+        {
+        "LocalResourceValue":"केवल अक्षर की अनुमति है",
+        "MultipleResourceKey": "onlyalphabets",
+        "ResourceKey": "onlyalphabets",
+        "ResourceValue": "Only Alphabets Are Allowed In ",
+         "StateID": "2",
+        "Sequence": 1
+        }, {
+            "StateID": "2",        
+            "MultipleResourceKey": "RequestTimeout",
+            "ResourceKey": "RequestTimeout",
+            "ResourceValue": "Request Timeout",
+            "LocalResourceValue": "अनुरोध टाइमआउट।",
+            "Sequence": 1       
+        },
+        {
+            "LocalResourceValue": "सॉकेट बंद।",
+            "MultipleResourceKey": "SocketClosed",
+            "ResourceKey": "SocketClosed",
+            "ResourceValue": "Socket Closed",
+            "Sequence": 1,
+            "StateID": "2"
+         },
+        {
+            "LocalResourceValue": "अपवाद।",
+            "MultipleResourceKey": "Exception",
+            "ResourceKey": "Exception",
+            "ResourceValue": "Exception",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "सर्वर से कनेक्ट नहीं कर पा रहे। बाद में पुन: प्रयास करें।",
+            "MultipleResourceKey": "noserver",
+            "ResourceKey": "noserver",
+            "ResourceValue": "Could not connect to server. Please try again later.",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "वेब सेवा से डेटा प्राप्त करते समय त्रुटि। कृपया बाद में पुन: प्रयास करें।",
+            "MultipleResourceKey": "errorservice",
+            "ResourceKey": "errorservice",
+            "ResourceValue": "Error while fetching data from Service. Please Try Again later.",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "प्रोफ़ाइल सफलतापूर्वक बनाई गई।",
+            "MultipleResourceKey": "profilecreated",
+            "ResourceKey": "profilecreated",
+            "ResourceValue": "Profile Successfully Created.",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "प्रोफ़ाइल सफलतापूर्वक अपडेट की गई।",
+            "MultipleResourceKey": "profileupdated",
+            "ResourceKey": "profileupdated",
+            "ResourceValue": "Profile Successfully Updated.",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "केवल संख्यात्मक वर्णों की अनुमति है",
+            "MultipleResourceKey": "numeric",
+            "ResourceKey": "numeric",
+            "ResourceValue": "Only Numeric Characters Are Allowed",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "केवल अक्षर की अनुमति है",
+            "MultipleResourceKey": "onlyalphabets",
+            "ResourceKey": "onlyalphabets",
+            "ResourceValue": "Only Alphabets Are Allowed",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "रिज़र्व",
+            "MultipleResourceKey": "reserve",
+            "ResourceKey": "reserve",
+            "ResourceValue": "Reserve",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "प्रतिपुष्टि",
+            "MultipleResourceKey": "Feedback",
+            "ResourceKey": "Feedback",
+            "ResourceValue": "Feedback",
+            "Sequence": 1,
+            "StateID": "2"
+        },
+        {
+            "LocalResourceValue": "विकल्प",
+            "MultipleResourceKey": "more",
+            "ResourceKey": "more",
+            "ResourceValue": "More",
+            "Sequence": 1,
+            "StateID": "2"
+        }
+		
+
+
+
+
+    ]
+}

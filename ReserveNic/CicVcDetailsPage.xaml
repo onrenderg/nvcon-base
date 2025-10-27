@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.ReserveNic.CicVcDetailsPage" 
+              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+              ios:Page.UseSafeArea="true">
+    <NavigationPage.TitleView>
+        <StackLayout x:Name="Custom_Navigation" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="0">
+                <Label x:Name="Lbl_Header" Text="NIC Video Conferencing" Style="{StaticResource NavigationLabelColor}" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_home.png" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Label x:Name="lbl_user_header1" Grid.Row="0" Padding="3" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="2,2,2,0" FontAttributes="Bold" TextColor="White" BackgroundColor="Navy" Text="Today  VC Details"/>
+        <Label x:Name="lbl_user_header" Grid.Row="1" Padding="3" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="2" FontAttributes="Bold" TextColor="White" BackgroundColor="Navy" Text="Today VC Details"/>
+
+        <Frame Grid.Row="2" BackgroundColor="White" Padding="0" Margin="3" CornerRadius="20" BorderColor="Navy">
+            <SearchBar x:Name="searchbar_todayvcdetails" Placeholder="Search" PlaceholderColor="Maroon" TextChanged="SearchBar_TextChanged" CancelButtonColor="Red" TextColor="Navy"/>
+        </Frame>
+        
+        <Label x:Name="lbl_search" Grid.Row="3" FontSize="Default" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" FontAttributes="Bold" TextColor="Navy" Text="Type In Search Bar To Filter Results In Realtime"/>
+
+        <ScrollView Grid.Row="4" Margin="9">
+            <StackLayout>
+                <CollectionView x:Name="listView_todayvcdetails" SelectionMode="None" IsVisible="false">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="0,0,0,10" BackgroundColor="White" Stroke="Navy" StrokeThickness="2">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20"/>
+                                </Border.StrokeShape>
+                                <Grid Padding="10">
+                                    <VerticalStackLayout Spacing="8">
+                                        <!-- VC ID Header -->
+                                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                                            <Label Text="VC ID: " TextColor="OrangeRed" FontSize="18" FontAttributes="Bold" TextDecorations="Underline"/>
+                                            <Label Text="{Binding VC_ID}" TextColor="OrangeRed" FontSize="18" FontAttributes="Bold" TextDecorations="Underline"/>
+                                        </HorizontalStackLayout>
+
+                                        <!-- End Time -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="End Time" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VCEndTime}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Level -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Level" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding LevelName}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Organisation -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Organisation" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Org_Name}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Department -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Department" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Dept_Name}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Purpose -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Purpose" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Purpose}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Studio Name -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Studio Name" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Studio_Name}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Host Studio -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Host Studio" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding hoststudio}" TextColor="Red" FontSize="14" FontAttributes="Bold" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Requested By -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Requested By" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding RequestedBy}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Coordinator Name -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Coordinator Name" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordName}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Coordinator Mobile -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Coordinator Mobile" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordMobile}" TextColor="Blue" FontSize="14" Margin="3,0,0,0" TextDecorations="Underline">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
+                                        </VerticalStackLayout>
+
+                                        <!-- Coordinator Email -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Coordinator Email" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordEmail}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- IP Phone -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="IP Phone" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordIpPhone}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Landline -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Landline" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VccoordLandline}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Webroom -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="Webroom" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding webroom}" TextColor="OrangeRed" FontSize="14" FontAttributes="Bold" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- VC Status -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="VC Status" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VCStatus}" TextColor="Maroon" FontSize="14" FontAttributes="Bold" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Action Buttons -->
+                                        <HorizontalStackLayout Spacing="10" Margin="0,10,0,0" HorizontalOptions="Center">
+                                            <Button CornerRadius="20" CommandParameter="{Binding VC_ID}" Clicked="btn_takemethere_Clicked" FontSize="16" BackgroundColor="Transparent" BorderColor="Navy" BorderWidth="1" TextColor="Navy" IsVisible="{Binding takemetherevisibility}" Text="📍 Take Me There" FontAttributes="Bold"/>
+                                            <Button CornerRadius="20" CommandParameter="{Binding VC_ID}" Clicked="btn_alertme_Clicked" FontSize="16" BackgroundColor="Transparent" BorderColor="Navy" BorderWidth="1" TextColor="Navy" FontAttributes="Bold" IsVisible="{Binding alertmevisibility}" Text="⏰ Alert"/>
+                                        </HorizontalStackLayout>
+
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <ListView x:Name="listView_todayvcdetailslocal" HasUnevenRows="True" SeparatorColor="#126b8a" SelectionMode="None" IsVisible="false">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame VerticalOptions="StartAndExpand" Margin="7,10,7,10" HasShadow="False" CornerRadius="20" BackgroundColor="White" BorderColor="Navy">
+                                    <VerticalStackLayout Spacing="8">
+                                        <!-- VC ID Header -->
+                                        <HorizontalStackLayout Spacing="5" HorizontalOptions="Center">
+                                            <Label Text="वीसी आईडी: " TextColor="OrangeRed" FontSize="18" FontAttributes="Bold" TextDecorations="Underline"/>
+                                            <Label Text="{Binding VC_ID}" TextColor="OrangeRed" FontSize="18" FontAttributes="Bold" TextDecorations="Underline"/>
+                                        </HorizontalStackLayout>
+
+                                        <!-- समाप्त समय -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="समाप्त समय" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VCEndTime}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- स्तर -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="स्तर" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding LevelName}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- संगठन -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="संगठन" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Org_Name}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- विभाग -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="विभाग" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Dept_Name}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- उद्देश्य -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="उद्देश्य" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Purpose}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- स्टूडियो नाम -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="स्टूडियो नाम" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding Studio_Name}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- होस्ट स्टूडियो -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="होस्ट स्टूडियो" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding hoststudio}" TextColor="Red" FontSize="14" FontAttributes="Bold" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- द्वारा अनुरोध किया गया -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="द्वारा अनुरोध किया गया" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding RequestedBy}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- समन्वयक का नाम -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="समन्वयक का नाम" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordName}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- समन्वयक का मोबाइल -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="समन्वयक का मोबाइल" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordMobile}" TextColor="Blue" FontSize="14" Margin="3,0,0,0" TextDecorations="Underline">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="1"/>
+                                                </Label.GestureRecognizers>
+                                            </Label>
+                                        </VerticalStackLayout>
+
+                                        <!-- समन्वयक का ईमेल -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="समन्वयक का ईमेल" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordEmail}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- आईपी फोन -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="आईपी फोन" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VcCoordIpPhone}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- लैंडलाइन -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="लैंडलाइन" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VccoordLandline}" TextColor="Maroon" FontSize="14" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- वेब रूम -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="वेब रूम" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding webroom}" TextColor="OrangeRed" FontSize="14" FontAttributes="Bold" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- वीसी स्थिति -->
+                                        <VerticalStackLayout Spacing="2">
+                                            <Label Text="वीसी स्थिति" TextColor="Navy" FontAttributes="Bold" FontSize="14"/>
+                                            <Label Text="{Binding VCStatus}" TextColor="Maroon" FontSize="14" FontAttributes="Bold" Margin="3,0,0,0"/>
+                                        </VerticalStackLayout>
+
+                                        <!-- Action Buttons -->
+                                        <HorizontalStackLayout Spacing="10" Margin="0,10,0,0" HorizontalOptions="Center">
+                                            <Button CornerRadius="20" CommandParameter="{Binding VC_ID}" Clicked="btn_takemethere_Clicked" FontSize="16" BackgroundColor="Transparent" BorderColor="Navy" BorderWidth="1" TextColor="Navy" IsVisible="{Binding takemetherevisibility}" Text="📍 मुझे वहां ले चलो" FontAttributes="Bold"/>
+                                            <Button CornerRadius="20" CommandParameter="{Binding VC_ID}" Clicked="btn_alertme_Clicked" FontSize="16" BackgroundColor="Transparent" BorderColor="Navy" BorderWidth="1" TextColor="Navy" FontAttributes="Bold" IsVisible="{Binding alertmevisibility}" Text="⏰ सचेत करें"/>
+                                        </HorizontalStackLayout>
+
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+
+        <ContentView x:Name="Loading_activity" BackgroundColor="#C0808080" Padding="20, 20" IsVisible="false" Grid.RowSpan="999">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Border BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" Margin="6" HorizontalOptions="FillAndExpand">
+                        <ActivityIndicator IsVisible="true" IsRunning="true" Margin="5"/>
+                        <Label x:Name="Lbl_PleaseWait" Text="Please Wait ..." TextColor="Black" FontAttributes="Bold" HorizontalOptions="FillAndExpand" WidthRequest="600" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Border>
+            </StackLayout>
+        </ContentView>
+    </Grid>
+
+</ContentPage>

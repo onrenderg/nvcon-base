@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NICVC.CurrentMonthVcPage" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+             ios:Page.UseSafeArea="true">
+    <NavigationPage.TitleView>
+        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
+            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+            <Label x:Name="Lbl_Header" 
+                   Text="NIC Video Conferencing" 
+                   Style="{StaticResource NavigationLabelColor}" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center"/>
+        </HorizontalStackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_home.png" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <Grid RowDefinitions="Auto,Auto,*">
+        <Label x:Name="lbl_user_header1" 
+               Grid.Row="0"
+               Padding="3" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               Margin="2" 
+               FontAttributes="Bold" 
+               TextColor="White" 
+               BackgroundColor="Navy" 
+               Text="Current Month VC"/>
+        
+        <Label x:Name="lbl_user_header" 
+               Grid.Row="1"
+               Padding="3" 
+               FontSize="18" 
+               HorizontalTextAlignment="Center" 
+               VerticalTextAlignment="Center" 
+               Margin="2,2,2,0" 
+               FontAttributes="Bold" 
+               TextColor="White" 
+               BackgroundColor="Navy" 
+               Text="Current Month VC"/>
+        
+        <Border Grid.Row="2" 
+                Margin="5" 
+                StrokeThickness="0"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 20"
+                Padding="3">
+            <Grid>
+                <!-- English Version -->
+                <CollectionView x:Name="listView_schedulevc" 
+                                SelectionMode="Single" 
+                                IsVisible="false" 
+                                SelectionChanged="listView_schedulevc_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" 
+                                BackgroundColor="White" 
+                                Stroke="Navy" 
+                                StrokeThickness="2"
+                                StrokeShape="RoundRectangle 20">
+                            <Grid HorizontalOptions="Fill" 
+                                  Padding="10" 
+                                  ColumnDefinitions="5*,4*,1*" 
+                                  ColumnSpacing="10">
+                                
+                                <VerticalStackLayout Grid.Column="0" Spacing="5">
+                                    <Label Text="VC Date" 
+                                           TextColor="Navy" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontSize="Default" 
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding DateofVC}" 
+                                           TextColor="Maroon" 
+                                           FontSize="Default" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                                
+                                <VerticalStackLayout Grid.Column="1" Spacing="5">
+                                    <Label Text="No. Of Vc's" 
+                                           TextColor="Navy" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontSize="Default" 
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding NoOfVc}" 
+                                           TextColor="Maroon" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontSize="Default" 
+                                           FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                                
+                                <Image Source="ic_vcforward" 
+                                       HeightRequest="35" 
+                                       Grid.Column="2" 
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Hindi Version -->
+            <CollectionView x:Name="listView_schedulevclocal" 
+                            SelectionMode="Single" 
+                            IsVisible="false" 
+                            SelectionChanged="listView_schedulevc_SelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" 
+                                BackgroundColor="White" 
+                                Stroke="Navy" 
+                                StrokeThickness="2"
+                                StrokeShape="RoundRectangle 20">
+                            <Grid HorizontalOptions="Fill" 
+                                  Padding="10" 
+                                  ColumnDefinitions="5*,4*,1*" 
+                                  ColumnSpacing="10">
+                                
+                                <VerticalStackLayout Grid.Column="0" Spacing="5">
+                                    <Label Text="वीसी की तिथि" 
+                                           TextColor="Navy" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontSize="Default" 
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding DateofVC}" 
+                                           TextColor="Maroon" 
+                                           FontSize="Default" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                                
+                                <VerticalStackLayout Grid.Column="1" Spacing="5">
+                                    <Label Text="वीसी की संख्या" 
+                                           TextColor="Navy" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontSize="Default" 
+                                           FontAttributes="Bold"/>
+                                    <Label Text="{Binding NoOfVc}" 
+                                           TextColor="Maroon" 
+                                           HorizontalTextAlignment="Center" 
+                                           FontSize="Default" 
+                                           FontAttributes="Bold"/>
+                                </VerticalStackLayout>
+                                
+                                <Image Source="ic_vcforward" 
+                                       HeightRequest="35" 
+                                       Grid.Column="2" 
+                                       VerticalOptions="Center"/>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            </Grid>
+        </Border>
+
+        <!-- Loading Overlay -->
+        <Grid Grid.Row="0" 
+              Grid.RowSpan="3"
+              x:Name="Loading_activity" 
+              BackgroundColor="#C0808080" 
+              IsVisible="false"
+              Padding="20">
+            <Border BackgroundColor="White" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Padding="20" 
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 10">
+                <HorizontalStackLayout Spacing="15">
+                    <ActivityIndicator IsVisible="true" IsRunning="true"/>
+                    <Label x:Name="Lbl_PleaseWait" 
+                           Text="Please Wait ..." 
+                           TextColor="Black" 
+                           FontAttributes="Bold" 
+                           VerticalTextAlignment="Center"/>
+                </HorizontalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NICVC.ImportantVcPage" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls" 
+             ios:Page.UseSafeArea="true">
+    <NavigationPage.TitleView  >
+        <StackLayout x:Name="Custom_Navigation" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+
+            <Image Source="ic_launcher.png"  HeightRequest="40"  VerticalOptions="CenterAndExpand"/>
+            <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="0">
+
+                <Label x:Name="Lbl_Header" Text="NIC Video Conferencing" Style="{StaticResource NavigationLabelColor}" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                      VerticalTextAlignment="Center" />
+               
+            </StackLayout>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="ic_home.png" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <StackLayout>
+            <Label x:Name="lbl_user_header1" Padding="3"  FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="2,2,2,0" FontAttributes="Bold" TextColor="White" BackgroundColor="Navy" Text="Schedule VC"/>
+
+            <Label x:Name="lbl_user_header" Padding="3"  FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="2" FontAttributes="Bold" TextColor="White" BackgroundColor="Navy" Text="Schedule VC"/>
+           
+            
+            <CollectionView x:Name="listView_ImportantVc" SelectionMode="None" IsVisible="false" VerticalOptions="FillAndExpand" Margin="5">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" BackgroundColor="White" Stroke="Navy" StrokeThickness="2">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20"/>
+                            </Border.StrokeShape>
+                            <Grid HorizontalOptions="FillAndExpand" Padding="10">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="listView_ImportantVc_ItemTapped" />
+                                </Grid.GestureRecognizers>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Orientation="Vertical" Grid.Column="0">
+                                    <Label Text="Start Time" TextColor="Navy" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Startingtime}" TextColor="Maroon" FontSize="Default" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical" Grid.Column="1">
+                                    <Label Text="No. Of Vc's" TextColor="Navy" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding NoOfVc}" TextColor="Maroon" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                                <Image Source="ic_vcforward" HeightRequest="35" Grid.Column="2" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <CollectionView x:Name="listView_ImportantVclocal" SelectionMode="None" IsVisible="false" VerticalOptions="FillAndExpand" Margin="5">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border Margin="5" BackgroundColor="White" Stroke="Navy" StrokeThickness="2">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="20"/>
+                            </Border.StrokeShape>
+                            <Grid HorizontalOptions="FillAndExpand" Padding="10">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="listView_ImportantVc_ItemTapped" />
+                                </Grid.GestureRecognizers>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="5*"/>
+                                    <ColumnDefinition Width="4*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Orientation="Vertical" Grid.Column="0">
+                                    <Label Text="वीसी शुरू होने का समय" TextColor="Navy" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding Startingtime}" TextColor="Maroon" FontSize="Default" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical" Grid.Column="1">
+                                    <Label Text="वीसी की संख्या" TextColor="Navy" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold" VerticalTextAlignment="Center" />
+                                    <Label Text="{Binding NoOfVc}" TextColor="Maroon" HorizontalTextAlignment="Center" FontSize="Default" FontAttributes="Bold" VerticalTextAlignment="Center" />
+                                </StackLayout>
+                                <Image Source="ic_vcforward" HeightRequest="35" Grid.Column="2" />
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        
+
+
+        </StackLayout>
+        <ContentView x:Name="Loading_activity" BackgroundColor="#C0808080" Padding="20, 20" IsVisible="false" Grid.RowSpan="999">
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <Border BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" Margin="6" HorizontalOptions="FillAndExpand">
+                        <ActivityIndicator IsVisible="true" IsRunning="true" Margin="5"/>
+                        <Label x:Name="Lbl_PleaseWait" Text="Please Wait ..." TextColor="Black" FontAttributes="Bold" HorizontalOptions="FillAndExpand" WidthRequest="600" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Border>
+            </StackLayout>
+        </ContentView>
+    </Grid>
+
+
+
+</ContentPage>
