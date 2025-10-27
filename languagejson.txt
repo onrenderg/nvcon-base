@@ -1546,6 +1546,14 @@
             "LocalResourceValue": "कुलपति विवरण (वार्षिक)",
             "Sequence": "1"
         },
+           {
+            "StateID": "2",
+            "MultipleResourceKey": "monthvcdt",
+            "ResourceKey": "monthvcdt",
+            "ResourceValue": "VC Details ",
+            "LocalResourceValue": "कुलपति विवरण ",
+            "Sequence": "1"
+        },
         {
             "StateID": "2",
             "MultipleResourceKey": "LocalStudio",
