@@ -45,7 +45,7 @@ namespace NICVC
             multipointNICDatabase = new MultipointNICDatabase();
             Lbl_UserDetails.Text = Preferences.Get("DisplayName", "");
             DatePicker_startdate.Date = DateTime.Now.Date;
-            selecteddate = DatePicker_startdate.Date.ToString();
+            selecteddate = DatePicker_startdate.Date.ToString("dd-MM-yyyy");
 
         }
 
