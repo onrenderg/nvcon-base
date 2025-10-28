@@ -55,7 +55,7 @@
                    Grid.Column="0"/>
             <Picker x:Name="picker_selectdate" 
                     Title="Select Date" 
-                    TextColor="Maroon" 
+                  
                     HorizontalOptions="Fill" 
                     Grid.Column="1" 
                     SelectedIndexChanged="picker_sort_SelectedIndexChanged" 

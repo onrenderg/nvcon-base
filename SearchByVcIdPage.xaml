@@ -45,7 +45,6 @@
         
         <Border Grid.Row="2" 
                 Margin="5" 
-                Stroke="Navy" 
                 StrokeThickness="2"
                 StrokeShape="RoundRectangle 20" 
                 Padding="5">
@@ -53,10 +52,8 @@
                 <Entry x:Name="entry_vcid" 
                        Grid.Column="0"
                        Placeholder="Enter VC Id To Search" 
-                       PlaceholderColor="Navy"
                        Keyboard="Numeric" 
                        MaxLength="7" 
-                       TextColor="Navy"
                        VerticalOptions="Center"/>
                 <Button x:Name="btn_search" 
                         Grid.Column="1"

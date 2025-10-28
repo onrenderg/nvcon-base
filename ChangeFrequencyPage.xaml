@@ -38,8 +38,8 @@
                 </Grid.ColumnDefinitions>-->
 
 
-                <Label x:Name="lbl_selectday" Text="Select Day"  TextColor="Navy" VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"  FontAttributes="Bold" Grid.Row="0" Grid.ColumnSpan="2"/>
-                <Picker x:Name="picker_selectdays" Title="Select Days" TextColor="Maroon"  HorizontalOptions="FillAndExpand"  Grid.Row="1" Grid.ColumnSpan="2" SelectedIndexChanged="picker_selectdays_SelectedIndexChanged" ios:Picker.UpdateMode="WhenFinished" />
+                <Label x:Name="lbl_selectday" Text="Select Day"  VerticalTextAlignment="Center"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Start"  FontAttributes="Bold" Grid.Row="0" Grid.ColumnSpan="2"/>
+                <Picker x:Name="picker_selectdays" Title="Select Days"  HorizontalOptions="FillAndExpand"  Grid.Row="1" Grid.ColumnSpan="2" SelectedIndexChanged="picker_selectdays_SelectedIndexChanged" ios:Picker.UpdateMode="WhenFinished" />
 
                 <Button x:Name="btn_cancel" CornerRadius="20" Clicked="btn_cancel_Clicked"  Grid.Row="3" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" TextColor="Red" FontSize="18" FontAttributes="Bold" BorderColor="Red" BorderWidth="1" BackgroundColor="White"/>
                 <Button x:Name="btn_update" CornerRadius="20" Clicked="btn_update_Clicked"  Grid.Row="3" Grid.Column="1"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" TextColor="Navy" FontSize="18" FontAttributes="Bold" BorderColor="Navy" BorderWidth="1" BackgroundColor="White"/>

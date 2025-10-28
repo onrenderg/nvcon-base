@@ -42,7 +42,6 @@
         
         <ScrollView Grid.Row="2">
             <Border Margin="10" 
-                    BackgroundColor="White" 
                     Stroke="Navy" 
                     StrokeThickness="2"
                     StrokeShape="RoundRectangle 20" 

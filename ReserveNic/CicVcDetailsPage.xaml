@@ -32,7 +32,7 @@
             <SearchBar x:Name="searchbar_todayvcdetails" Placeholder="Search" PlaceholderColor="Maroon" TextChanged="SearchBar_TextChanged" CancelButtonColor="Red" TextColor="Navy"/>
         </Frame>
         
-        <Label x:Name="lbl_search" Grid.Row="3" FontSize="Default" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" FontAttributes="Bold" TextColor="Navy" Text="Type In Search Bar To Filter Results In Realtime"/>
+        <Label x:Name="lbl_search" Grid.Row="3" FontSize="Default" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" FontAttributes="Bold"  Text="Type In Search Bar To Filter Results In Realtime"/>
 
         <ScrollView Grid.Row="4" Margin="9">
             <StackLayout>

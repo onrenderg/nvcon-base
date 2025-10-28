@@ -58,7 +58,7 @@
                    Grid.Column="0"/>
             <Picker x:Name="picker_sort" 
                     Title="Select Starting Time" 
-                    TextColor="Maroon" 
+            
                     HorizontalOptions="Fill" 
                     Grid.Column="1" 
                     SelectedIndexChanged="picker_sort_SelectedIndexChanged" 
