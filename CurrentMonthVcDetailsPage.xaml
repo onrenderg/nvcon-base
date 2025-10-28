@@ -34,14 +34,22 @@
         <Label x:Name="lbl_user_header1" Grid.Row="0" Padding="3" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="2,2,2,0" FontAttributes="Bold" TextColor="White" BackgroundColor="Navy" Text="Schedule  VC Details"/>
         <Label x:Name="lbl_user_header" Grid.Row="1" Padding="3" FontSize="18" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="2" FontAttributes="Bold" TextColor="White" BackgroundColor="Navy" Text="Schedule  VC Details"/>
 
-        <HorizontalStackLayout Grid.Row="2" Margin="5,0" Spacing="10">
-            <Label x:Name="lbl_startingtime" Text="Select Starting Time" VerticalOptions="Center"  FontAttributes="Bold"/>
+        <Grid Grid.Row="2" Margin="5,0" ColumnSpacing="10" ColumnDefinitions="Auto,*">
+            <Label x:Name="lbl_startingtime" 
+                   Grid.Column="0"
+                   Text="Select Starting Time" 
+                   VerticalOptions="Center"  
+                   FontAttributes="Bold"/>
             <Picker x:Name="picker_sort" 
+                    Grid.Column="1"
                     Title="Select Starting Time"  
+                    FontSize="14"
+                    MinimumHeightRequest="44"
                     HorizontalOptions="Fill" 
+                    VerticalOptions="Center"
                     SelectedIndexChanged="picker_sort_SelectedIndexChanged" 
                     ios:Picker.UpdateMode="WhenFinished"/>
-        </HorizontalStackLayout>
+        </Grid>
 
         <Frame Grid.Row="3" BackgroundColor="White" Padding="0" Margin="3" CornerRadius="20" BorderColor="Navy">
             <SearchBar x:Name="searchbar_schedulevcdetails" Placeholder="Search" PlaceholderColor="Maroon" TextChanged="searchbar_schedulevcdetails_TextChanged" CancelButtonColor="Red" TextColor="Navy"/>
