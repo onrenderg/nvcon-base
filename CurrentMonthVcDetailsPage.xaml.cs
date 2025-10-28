@@ -29,7 +29,8 @@ namespace NICVC
             currentMonthVcDatabase = new CurrentMonthVcDatabase();
             
             lbl_startingtime.Text = App.GetLabelByKey("vcstarttime");
-            lbl_user_header.Text = (App.Language == 0) ? "VC Details" : "कुलपति विवरण";
+            //lbl_user_header.Text = (App.Language == 0) ? "VC Details" : "कुलपति विवरण";
+            lbl_user_header.Text = App.GetLabelByKey("monthvcdt");
             Lbl_Header.Text = App.GetLabelByKey("nicvdconf");
             saveUserPreferencesDatabase = new SaveUserPreferencesDatabase();
             SavedUserPreferList = saveUserPreferencesDatabase.GetSaveUserPreferences("select * from saveUserPreferences").ToList();
