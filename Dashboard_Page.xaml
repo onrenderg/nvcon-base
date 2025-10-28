@@ -15,7 +15,7 @@
             <Label x:Name="Lbl_Header1" 
                    Text="NIC Video Conferencing" 
                    Style="{StaticResource NavigationLabelColor}" 
-                   FontSize="20" 
+                   FontSize="18" 
                    FontAttributes="Bold" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center" 
