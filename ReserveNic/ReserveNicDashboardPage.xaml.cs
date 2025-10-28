@@ -34,7 +34,7 @@ namespace NICVC
         string districtname, studioname, selecteddate;
         int responsecode;
         int ImportantVCCount, OngoingVcCount;
-
+        
         public ReserveNicDashboardPage()
         {
             InitializeComponent();
@@ -44,6 +44,8 @@ namespace NICVC
             multipointStateDatabase = new MultipointStateDatabase();
             multipointNICDatabase = new MultipointNICDatabase();
             Lbl_UserDetails.Text = Preferences.Get("DisplayName", "");
+            DatePicker_startdate.Date = DateTime.Now.Date;
+            selecteddate = DatePicker_startdate.Date.ToString();
 
         }
 
@@ -257,12 +259,13 @@ namespace NICVC
         private async void cicvc_Tapped(object sender, EventArgs e)
         {
             var current = Connectivity.NetworkAccess;
+            var cicselecteddate = DatePicker_startdate.Date.ToString("dd-MM-yyyy");
             if (current == NetworkAccess.Internet)
             {
-                int responsecode = await GetCICVc(selecteddate);
+                int responsecode = await GetCICVc(cicselecteddate);
                 if (responsecode == 200)
                 {
-                    await Navigation.PushAsync(new CicVcPage(selecteddate));
+                    await Navigation.PushAsync(new CicVcPage(cicselecteddate));
                 }
                 else if (responsecode == 300)
                 {
@@ -275,10 +278,10 @@ namespace NICVC
                 await DisplayAlert(App.GetLabelByKey("NICVC"), App.GetLabelByKey("nointernet"), App.GetLabelByKey("close"));
 
                 cicVclist = cicVcDatabase.GetCicVc($"Select * from CicVc " +
-                     $"where substr(dateofvc, 7) || substr(dateofvc, 4, 2) || substr(dateofvc, 1, 2) = substr('{selecteddate}', 7) || substr('{selecteddate}', 4, 2) || substr('{selecteddate}', 1, 2) ").ToList();
+                     $"where substr(dateofvc, 7) || substr(dateofvc, 4, 2) || substr(dateofvc, 1, 2) = substr('{cicselecteddate}', 7) || substr('{cicselecteddate}', 4, 2) || substr('{cicselecteddate}', 1, 2) ").ToList();
                 if (cicVclist.Any())
                 {
-                    await Navigation.PushAsync(new CicVcPage(selecteddate));
+                    await Navigation.PushAsync(new CicVcPage(cicselecteddate));
                 }
                 else
                 {
