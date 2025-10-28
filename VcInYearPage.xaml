@@ -50,7 +50,7 @@
               ColumnDefinitions="3*,3*,4*">
             <Label x:Name="lbl_month" 
                    Text="Month" 
-                   TextColor="Maroon" 
+          
                    FontSize="18" 
                    Grid.Column="0" 
                    FontAttributes="Bold"/>
@@ -82,7 +82,7 @@
                               Padding="5"
                               ColumnDefinitions="3*,3*,4*">
                             <Label Text="{Binding MonthName}" 
-                                   TextColor="Maroon" 
+                            
                                    FontSize="16" 
                                    Grid.Column="0" 
                                    FontAttributes="Bold"/>

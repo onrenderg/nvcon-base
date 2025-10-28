@@ -72,7 +72,7 @@
                                     DateSelected="startDatePicker_DateSelected" 
                                     Grid.Row="0" 
                                     Grid.Column="1"/>
-                        
+
                         <Label x:Name="lbl_todate" 
                                Text="To Date" 
                                TextColor="Navy" 
