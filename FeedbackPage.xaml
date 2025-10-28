@@ -123,7 +123,13 @@
 
                 <VerticalStackLayout Margin="10" Spacing="5">
                     <Label x:Name="lbl_remarks" TextColor="Black" Text="Enter Remarks" FontSize="16" FontAttributes="Bold"  />
-                    <Editor x:Name="editor_remarks" AutoSize="TextChanges" FontSize="16" MaxLength="200" Placeholder="Enter your remarks here"/>
+                    <Editor x:Name="editor_remarks" 
+                            TextColor="Black"
+                            PlaceholderColor="Black"
+                            AutoSize="TextChanges"
+                            FontSize="16"
+                            MaxLength="200"
+                            Placeholder="Enter your remarks here" />
                 </VerticalStackLayout>
             </VerticalStackLayout>
         </ScrollView>

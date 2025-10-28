@@ -86,7 +86,7 @@
         <ListView x:Name="listView_multipointvc" 
                   Grid.Row="3"
                   HasUnevenRows="True" 
-                  SeparatorColor="#126b8a" 
+                  SeparatorColor="Transparent" 
                   ItemTapped="listView_multipointvc_ItemTapped" 
                   SelectionMode="None">
             <ListView.ItemTemplate>
