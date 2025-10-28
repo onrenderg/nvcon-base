@@ -62,7 +62,7 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
 
-                    <Label x:Name="lbl_selvc" Grid.Row="0" Text="Select VC" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Label x:Name="lbl_selvc" Grid.Row="0" Text="Select VC" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                     <Picker x:Name="picker_vc" 
                             Grid.Row="1" Title="Select VC"  
                             FontSize="16" FontAttributes="Bold" 
@@ -72,7 +72,7 @@
                             ios:Picker.UpdateMode="WhenFinished" 
                             HorizontalOptions="Fill"/>
 
-                    <Label x:Name="lbl_selstudio" Grid.Row="2" Text="Select Studio" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" />
+                    <Label x:Name="lbl_selstudio" Grid.Row="2" Text="Select Studio" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black" />
                     <Picker x:Name="picker_studio" 
                             Grid.Row="3" Title="Select Studio" 
                             FontSize="16" FontAttributes="Bold" 
@@ -122,7 +122,7 @@
                 </Grid>
 
                 <VerticalStackLayout Margin="10" Spacing="5">
-                    <Label x:Name="lbl_remarks" Text="Enter Remarks" FontSize="16" FontAttributes="Bold" />
+                    <Label x:Name="lbl_remarks" TextColor="Black" Text="Enter Remarks" FontSize="16" FontAttributes="Bold"  />
                     <Editor x:Name="editor_remarks" AutoSize="TextChanges" FontSize="16" MaxLength="200" Placeholder="Enter your remarks here"/>
                 </VerticalStackLayout>
             </VerticalStackLayout>
