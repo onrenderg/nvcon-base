@@ -43,6 +43,8 @@ namespace NICVC
             pointToPointDatabase = new PointToPointDatabase();
             multipointStateDatabase = new MultipointStateDatabase();
             multipointNICDatabase = new MultipointNICDatabase();
+            saveUserPreferencesDatabase = new SaveUserPreferencesDatabase();
+            SavedUserPreferList = saveUserPreferencesDatabase.GetSaveUserPreferences("select * from saveUserPreferences").ToList();
             Lbl_UserDetails.Text = Preferences.Get("DisplayName", "");
             DatePicker_startdate.Date = DateTime.Now.Date;
             selecteddate = DatePicker_startdate.Date.ToString("dd-MM-yyyy");
@@ -729,8 +731,8 @@ namespace NICVC
 
                 var client = new HttpClient();
                 string apiurl = $"{App.cicvc_url}" +
-                $"stateid={HttpUtility.UrlEncode(App.SavedUserPreferList.ElementAt(0).StateID)}" +
-                $"&districtid={HttpUtility.UrlEncode(App.SavedUserPreferList.ElementAt(0).DistrictID)}" +
+                $"stateid={HttpUtility.UrlEncode(SavedUserPreferList.ElementAt(0).StateID)}" +
+                $"&districtid={HttpUtility.UrlEncode(SavedUserPreferList.ElementAt(0).DistrictID)}" +
                 $"&frdt={HttpUtility.UrlEncode(selecteddate)}";
                 var responce = await client.GetAsync(apiurl);
 

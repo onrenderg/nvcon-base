@@ -58,7 +58,7 @@
             <Picker x:Name="picker_vcstatus" 
                     Title="Select VC Status" 
                     HorizontalOptions="Fill" 
-                    TextColor="Maroon" 
+         
                     Grid.Row="0" 
                     Grid.Column="1" 
                     SelectedIndexChanged="picker_vcstatus_SelectedIndexChanged" 
@@ -74,7 +74,7 @@
                    Grid.Column="0"/>
             <Picker x:Name="picker_sort" 
                     Title="Select Starting Time" 
-                    TextColor="Maroon" 
+                 
                     HorizontalOptions="Fill" 
                     Grid.Row="1" 
                     Grid.Column="1" 
