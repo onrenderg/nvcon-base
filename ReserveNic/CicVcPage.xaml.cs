@@ -70,13 +70,16 @@ namespace NICVC.ReserveNic
 
         }
 
-        private void listView_multipointvc_ItemTapped(object sender, ItemTappedEventArgs e)
+        private void listView_multipointvc_ItemTapped(object sender, TappedEventArgs e)
         {
-            var currentRecord = e.Item as CicVc;
-           // var dateofvc = currentRecord.DateofVC.ToString();
-            var starttimevc = currentRecord.Startingtime.ToString();
-            var vcstatus = picker_vcstatus.SelectedItem.ToString();
-            Navigation.PushAsync(new CicVcDetailsPage(dateofvc,starttimevc, vcstatus));
+            // Get the item from the Border's BindingContext (CollectionView uses TapGestureRecognizer)
+            var border = sender as Border;
+            if (border?.BindingContext is CicVc currentRecord)
+            {
+                var starttimevc = currentRecord.Startingtime.ToString();
+                var vcstatus = picker_vcstatus.SelectedItem?.ToString() ?? "All";
+                Navigation.PushAsync(new CicVcDetailsPage(dateofvc, starttimevc, vcstatus));
+            }
         }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
