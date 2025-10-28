@@ -153,7 +153,14 @@
                                     <VerticalStackLayout.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="importantvc_Tapped" NumberOfTapsRequired="1"/>
                                     </VerticalStackLayout.GestureRecognizers>
-                                    <Label x:Name="Lbl_Important" Text="Important Vc's - 0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="12" FontAttributes="Bold" TextColor="Navy" LineBreakMode="WordWrap"/>
+                                    <Label x:Name="Lbl_Important"
+                                           Text="Important Vc's - 0"
+                                           VerticalTextAlignment="Center"
+                                           HorizontalTextAlignment="Center"
+                                           FontSize="12"
+                                           FontAttributes="Bold"
+                                           TextColor="Navy"
+                                           LineBreakMode="WordWrap"/>
                                 </VerticalStackLayout>
                             </Frame>
                         </Grid>

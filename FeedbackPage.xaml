@@ -66,7 +66,7 @@
                     <Picker x:Name="picker_vc" 
                             Grid.Row="1" Title="Select VC"  
                             FontSize="16" FontAttributes="Bold" 
-             
+                            TextColor="Black"
                   
                             SelectedIndexChanged="picker_vc_SelectedIndexChanged" 
                             ios:Picker.UpdateMode="WhenFinished" 
@@ -76,7 +76,8 @@
                     <Picker x:Name="picker_studio" 
                             Grid.Row="3" Title="Select Studio" 
                             FontSize="16" FontAttributes="Bold" 
-              
+                            TextColor="Black"
+
       
                             VerticalOptions="Center" 
                             ios:Picker.UpdateMode="WhenFinished" 

@@ -60,19 +60,19 @@
                 </Grid.ColumnDefinitions>
 
                 <Label x:Name="lbl_mobile" Grid.Row="0" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
-                <Entry x:Name="entry_mobile" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Keyboard="Numeric" MaxLength="10"/>
+                <Entry x:Name="entry_mobile" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Keyboard="Numeric" MaxLength="10" TextColor="Black"/>
 
                 <Label x:Name="lbl_Name" Grid.Row="1" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
-                <Entry x:Name="entry_name" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Keyboard="Text"/>
+                <Entry x:Name="entry_name" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" Keyboard="Text" TextColor="Black"/>
 
                 <Label x:Name="lbl_department" Grid.Row="2" Grid.Column="0" Text="Select VC" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
-                <Entry x:Name="entry_department" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Keyboard="Text"/>
+                <Entry x:Name="entry_department" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Keyboard="Text" TextColor="Black" />
 
                 <Label x:Name="lbl_designation" Grid.Row="3" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
-                <Entry x:Name="entry_designation" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" Keyboard="Text"/>
+                <Entry x:Name="entry_designation" Grid.Row="3" Grid.Column="1" VerticalOptions="Center" Keyboard="Text" TextColor="Black" />
 
                 <Label x:Name="lbl_email" Grid.Row="4" Grid.Column="0" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" TextColor="Black"/>
-                <Entry x:Name="entry_email" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" Keyboard="Email"/>
+                <Entry x:Name="entry_email" Grid.Row="4" Grid.Column="1" VerticalOptions="Center" Keyboard="Email" TextColor="Black" />
             </Grid>
         </ScrollView>
 
