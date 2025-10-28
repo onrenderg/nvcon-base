@@ -36,7 +36,11 @@
 
         <HorizontalStackLayout Grid.Row="2" Margin="5,0" Spacing="10">
             <Label x:Name="lbl_startingtime" Text="Select Starting Time" VerticalOptions="Center"  FontAttributes="Bold"/>
-            <Picker x:Name="picker_sort" Title="Select Starting Time"  HorizontalOptions="Fill" SelectedIndexChanged="picker_sort_SelectedIndexChanged" ios:Picker.UpdateMode="WhenFinished"/>
+            <Picker x:Name="picker_sort" 
+                    Title="Select Starting Time"  
+                    HorizontalOptions="Fill" 
+                    SelectedIndexChanged="picker_sort_SelectedIndexChanged" 
+                    ios:Picker.UpdateMode="WhenFinished"/>
         </HorizontalStackLayout>
 
         <Frame Grid.Row="3" BackgroundColor="White" Padding="0" Margin="3" CornerRadius="20" BorderColor="Navy">
