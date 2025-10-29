@@ -48,6 +48,9 @@
 	  <ApplicationVersion>33</ApplicationVersion>
 	  <ApplicationDisplayVersion>33.0</ApplicationDisplayVersion>
 	  <NoWarn>CS0618;XC0022;CS8602;CS8604;CS8618;CS8625;CS8600;CS8601</NoWarn>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
 	  <ApplicationVersion>33</ApplicationVersion>
@@ -68,6 +71,9 @@
 	  <ApplicationVersion>33</ApplicationVersion>
 	  <ApplicationDisplayVersion>33.0</ApplicationDisplayVersion>
 	  <NoWarn>CS0618;XC0022;CS8602;CS8604;CS8618;CS8625;CS8600;CS8601</NoWarn>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
 	  <ApplicationVersion>33</ApplicationVersion>

@@ -347,7 +347,7 @@
                     StrokeThickness="0"
                     StrokeShape="RoundRectangle 10">
                 <HorizontalStackLayout Spacing="15">
-                    <ActivityIndicator IsVisible="true" IsRunning="true" Color="Navy"/>
+                    <ActivityIndicator IsVisible="true" IsRunning="true" />
                     <Label x:Name="Lbl_PleaseWait" 
                            Text="Please Wait ..." 
                            TextColor="Black" 
