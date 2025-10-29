@@ -10,8 +10,7 @@
              ios:Page.UseSafeArea="true">
 
     <NavigationPage.TitleView>
-        <HorizontalStackLayout x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center" Spacing="10">
-            <Image Source="ic_launcher.png" HeightRequest="40" VerticalOptions="Center"/>
+        <Grid x:Name="Custom_Navigation" HorizontalOptions="Fill" VerticalOptions="Center">
             <Label x:Name="Lbl_Header" 
                    Text="NIC Video Conferencing" 
                    Style="{StaticResource NavigationLabelColor}" 
@@ -19,8 +18,14 @@
                    FontAttributes="Bold" 
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   HorizontalOptions="Center"/>
-        </HorizontalStackLayout>
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Image Source="ic_launcher.png" 
+                   HeightRequest="40" 
+                   HorizontalOptions="Start" 
+                   VerticalOptions="Center"
+                   Margin="10,0,0,0"/>
+        </Grid>
     </NavigationPage.TitleView>
 
     <Grid RowDefinitions="*,Auto">

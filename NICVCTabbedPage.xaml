@@ -3,21 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NICVC.NICVCTabbedPage">
     <NavigationPage.TitleView  >
-        <StackLayout x:Name="Custom_Navigation" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" >
+        <Grid x:Name="Custom_Navigation"
+              HorizontalOptions="Fill"
+              VerticalOptions="Center" >
+           
 
-            <Image Source="ic_launcher.png"  HeightRequest="40"  VerticalOptions="CenterAndExpand"/>
-            <StackLayout  Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="0">
+                <Label x:Name="Lbl_Header" 
+                       Text="NIC Video Conferencing" 
+                       Style="{StaticResource NavigationLabelColor}" 
+                       FontSize="18" 
+                       FontAttributes="Bold" 
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
 
-                <Label x:Name="Lbl_Header" Text="NIC Video Conferencing" Style="{StaticResource NavigationLabelColor}" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"
-                      VerticalTextAlignment="Center" />
-                <!--<Label   Text="Department Of Health &amp; Family Welfare, H.P." TextColor="White" FontSize="Small" FontAttributes="Bold" HorizontalTextAlignment="Center"
-                      VerticalTextAlignment="Center" />-->
+                <Image Source="ic_launcher.png"  
+                       HeightRequest="40" 
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Center"
+                       Margin="10,0,0,0"/>
 
-            </StackLayout>
-        </StackLayout>
+        </Grid>
     </NavigationPage.TitleView>
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="ic_nicvc.png" Clicked="ToolbarItem_Clicked" />
 
-    </ContentPage.ToolbarItems>-->
 </TabbedPage>
