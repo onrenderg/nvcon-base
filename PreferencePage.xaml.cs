@@ -430,10 +430,13 @@ namespace NICVC
                     }
                     
                 }
-                catch (Exception ey)
+                catch (Exception ex)
                 {
+                    Console.WriteLine($"Error: {ex.Message}");
+                    if (ex.InnerException != null)
+                        Console.WriteLine($"Inner: {ex.InnerException.Message}");
                     Loading_activity.IsVisible = false;
-                    await DisplayAlert(App.GetLabelByKey("Exception"), ey.Message, App.GetLabelByKey("close"));
+                    await DisplayAlert(App.GetLabelByKey("Exception"), ex.Message, App.GetLabelByKey("close"));
                     return;
                 }
             }
